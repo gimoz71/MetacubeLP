@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/css/fonts.css" />
         <link rel="stylesheet" href="assets/css/starter.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/webfonts/fa-brands-400.ttf">
         <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -14,39 +18,47 @@
         <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
         <style media="screen">
             .card-container {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
+
             nft-card {
                 margin: 10px;
             }
+
             @media screen and (min-width: 768px) {
                 .card-container {
                     flex-direction: row;
                 }
             }
         </style>
-        <title>Metacubespace.com</title>
+        <title>Metacubespace.com - The More You Learn, TheMore You Earn</title>
     </head>
+
     <body id="top">
-        <nav class="navbar navbar-light navbar-expand-lg p-0 mb-5 mb-md-5 navbar-fixed mt-0 px-4 px-sm-5" id="navbar_top" >
+        <nav class="navbar click-scroll navbar-light navbar-expand-lg p-0 mb-5 mb-md-5 navbar-fixed mt-0 px-4 px-sm-5"
+            id="navbar_top">
             <div class="container">
-                <button class="navbar-toggler ml-2 menu-anim" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler ml-2 menu-anim" type="button" data-toggle="collapse"
+                    data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon d-none"></span>
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0" >
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
                             <a class="nav-link" href="#top"><i class="fa-solid fa-angle-up"></i></a>
                         </li>
@@ -74,22 +86,23 @@
                 <div class="row">
                     <div class="col-md-12">
                         <img src="assets/images/logo.svg" class="logo" alt="logo">
-                        <h1 class="master-claim"><span class="step1">More You <b>Learn</b>,</span> <span class="step2">More You <b>Earn</b></span></h1>
-                       <video id="player" preload="true" muted playsinline class="mistery-cube" alt="MISTERY CUBE">
-                            <source  src="assets/images/mistery_cube_2.mp4" type="video/mp4">
-                            <source  src="assets/images/mistery_cube_2.webm" type="video/webm">
-                            <source  src="assets/images/mistery_cube_2.ogv" type="video/ogv">
-                            Your browser does not support the video tag.
+                        <h1 class="master-claim"><span class="step1">The More You <b>Learn</b>,</span><br> <span
+                                class="step2">The More You <b>Earn</b></span></h1>
+                        <video id="player" preload="metadata" autoplay muted playsinline class="mistery-cube" alt="MISTERY CUBE" poster="assets/images/mistery-cube-placeholder.jpg">
+                            <source src="assets/images/mistery_cube_2.mp4" type="video/mp4">
+                            <source src="assets/images/mistery_cube_2.webm" type="video/webm">
+                            <source src="assets/images/mistery_cube_2.ogv" type="video/ogv">
+                            <img src="assets/images/mistery-cube_alt-image.jpg" title="Your browser does not support the video tag" />
                         </video>
-                        <script type="text/javascript">
+                        <!--<script type="text/javascript">
                             var video = document.getElementById("player");
-                            video.addEventListener("canplay", function() {
-                            setTimeout(function() {
-                                video.play();
-                            }, 5000);
+                            video.addEventListener("canplay", function () {
+                                setTimeout(function () {
+                                    video.play();
+                                }, 5000);
                             });
-                           
-                        </script>
+
+                        </script>-->
                     </div>
                 </div>
             </div>
@@ -106,17 +119,52 @@
         <div class="section text-center" id="about">
             <div class="container pt-5">
                 <div class="row py-5 justify-content-center">
+                    <!--<div class="col-md-8" id="come">
+                        <h1 class="claim d-block mb-3">Why <b>Meta</b>, Why <b>Cube</b></h1>
+                        <p class="text-justify">
+                            <b>Meta</b> perch&egrave; &egrave; la nuova direzione, il <i>Metaverso</i>, <b>Cube</b> perch&egrave; il nostro &egrave; uno spazio e a noi piace vederlo come un cubo pronto ad aprirsi per coinvolgere tutti coloro che sono interessati al mondo degli <b>NFT</b>, delle <b>Cryptovalute</b> e, appunto, del <b>Metaverso</b>. Uno spazio in cui navigare e trovare tutto ci&ograve; di cui si necessita nel momento migliore per noi...un <b>dispensatore di informazioni e servizi</b>.
+                        </p>
+                        <p class="text-justify">
+                            <b><i>MetaCube</i></b> si rivolge a tutte quelle persone che vogliono intraprendere una nuova avventura di <b>Business online</b> , a quelli che gi&agrave; ne fanno parte ma che faticano a trovare spunti e progetti validi, e pi&ugrave; in generale a tutti coloro che credono nella grande opportunit&agrave; delle <b>Blockchain</b> e del <b>Metaverso</b>, ma che spesso si trovano disorientati dal vortice di informazioni che la rete propone.
+                        </p>
+                        <p class="text-justify">
+                            <b>Con MetaCube vogliamo darvi la possibilit&agrave; di trovare un luogo in cui opportunit&agrave; e fiducia viaggiano alla pari, perch&egrave; sostenute da informazione e formazione di qualit&agrave; volte a rendere tutti pi&ugrave; consapevoli delle proprie scelte.</b>
+                        </p>
+                    </div>-->
                     <div class="col-md-8" id="come">
                         <h1 class="claim d-block mb-3">Why <b>Meta</b>, Why <b>Cube</b></h1>
                         <p class="text-justify">
-                            Meta perch&egrave; &egrave; la nuova direzione, il Metaverso, Cube perch&egrave; il nostro &egrave; uno spazio e a noi piace vederlo come un cubo pronto ad aprirsi per coinvolgere tutti coloro che sono interessati al mondo degli NFT, delle Cryptovalute e, appunto, del Metaverso. Uno spazio in cui navigare e trovare tutto ci&ograve; di cui si necessita nel momento migliore per noi...un dispensatore di informazioni e servizi.
+                            <b>MetaCube</b> si rivolge a tutte quelle persone che vogliono intraprendere una nuova avventura di
+                            <b>Business online</b>, a quelli che gi&agrave; ne fanno parte ma che faticano a trovare
+                            spunti e progetti validi, e pi&ugrave; in generale a tutti coloro che credono nella
+                            grande opportunit&agrave; delle <b>Blockchain</b> e del <b>Metaverso</b>, ma che spesso si trovano
+                            disorientati dal vortice di informazioni che la rete propone.
                         </p>
                         <p class="text-justify">
-                            MetaCube si rivolge a tutte quelle persone che vogliono intraprendere una nuova avventura di Business online , a quelli che gi&agrave; ne fanno parte ma che faticano a trovare spunti e progetti validi, e pi&ugrave; in generale a tutti coloro che credono nella grande opportunit&agrave; delle Blockchain e del Metaverso, ma che spesso si trovano disorientati dal vortice di informazioni che la rete propone.
+                            Oggi le persone entrano in questo mondo informandosi personalmente e si perdono per quanti
+                            progetti e quanta innovazione c&rsquo;&egrave; e dai molteplici &lsquo;aggiornamenti&rsquo;
+                            ed informazioni da seguire.
                         </p>
                         <p class="text-justify">
-                            Con MetaCube vogliamo darvi la possibilit&agrave; di trovare un luogo in cui opportunit&agrave; e fiducia viaggiano alla pari, perch&egrave; sostenute da informazione e formazione di qualit&agrave; volte a rendere tutti pi&ugrave; consapevoli delle proprie scelte.
+                            Oppure vengono trascinati da chi gli presenta un progetto che &egrave; l&rsquo;<i>unico</i>
+                            che pu&ograve; farti cambiare la vita&#8230;.vuoi perderti il nuovo <b>BITCOIN</b>???
                         </p>
+                        <p class="text-justify">
+                            La <b>libert&agrave; finanziaria</b> che questo mondo ci offre ha bisogno di semplici regole da
+                            apprendere, regole che solo attraverso la &lsquo;pratica&rsquo; potrai al meglio capire ma
+                            con un supporto ti aiuta in questo processo e che pu&ograve; realmente farti fare quelle
+                            scelte per te pi&ugrave; adatte per aprirti questo porta in un modo fatto da miliardi di
+                            opportunit&agrave;
+                        </p>
+                        <p class="text-justify">
+                            Altro aspetto che spesso riscontriamo per capirne meglio le dinamiche &egrave; la
+                            divulgazione di info su progetti e <b>Metaverso</b> da parte di &lsquo;addetti ai lavori&rsquo; ,
+                            anche loro nicchia, che sono per&ograve; troppo tecniche nel linguaggio e si riducono alla
+                            comprensione solo tra &lsquo;pari&rsquo;.
+                        </p>
+                        <h3 class="my-5">
+                            <b>Learn to Earn &#8230;. &lsquo;impara a guadagnare&rsquo;</b>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -126,9 +174,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 gateway">
-                        <img src="assets/images/cubo-rosso.png" class="cubo rosso">
-                        <img src="assets/images/cubo-blu.png" class="cubo blu">
-                        <img src="assets/images/cubo-giallo.png" class="cubo giallo">
+                        <img src="assets/images/cubo-rosso.png" class="cubo rosso" alt="cubo rosso">
+                        <img src="assets/images/cubo-blu.png" class="cubo blu" alt="cubo blu">
+                        <img src="assets/images/cubo-giallo.png" class="cubo giallo" alt="cubo giallo">
                     </div>
                     <div class="col-md-6">
                         <h1 class="claim d-block mb-3">We can be<br>Your <b style="color: #cf4347">Gateway</b></h1>
@@ -136,10 +184,10 @@
                 </div>
             </div>
         </div>
-        <div class="section dark" >
+        <div class="section dark">
             <div class="container">
                 <div class="row py-5 justify-content-end">
-                    <div class="col-md-6">
+                    <!--<div class="col-md-6">
                         <p class="text-justify">
                             La libert&agrave; finanziaria che questo mondo ci offre ha bisogno di semplici regole da apprendere e noi potremmo essere la porta di ingresso per entrare in questo nuovo spazio e, successivamente, un compagno di viaggio per tutto il tempo che riterai necessario.
                         </p>
@@ -149,15 +197,44 @@
                         <p class="text-justify">
                             <b>Ci saranno corsi base per imparare l'ABC e muovere i primi passi fino ad arrivare a interazioni pi&ugrave; complese per chi &egrave; (o arriver&agrave;) a un livello tecnico superiore.</b>
                         </p>
+                    </div>-->
+                    <div class="col-md-6">
+                        <p class="text-justify">
+                            <b>Metacube</b> vuole essere un percorso <b>informativo</b> e <b>formativo</b> proprio in
+                            questo senso, con uno spazio condiviso dove ci saranno informazioni chiare, dirette e
+                            comprensibili per tutti e con percorsi di formazione fatte di <b>Live</b>, supporto con
+                            piattaforme dedicate ed affiancamento per aver sufficiente autonomia per arrivare da
+                            &lsquo;soli&rsquo; a valutare meglio le opportunit&agrave; che <b>Metacube</b> propone ma
+                            anche e soprattutto valutare tutto con pi&ugrave; conoscenza.
+                        </p>
+                        <p class="text-justify">
+                            Uno spazio condiviso dove il Metaverso e gli NFT ne fanno da veicolo trainante.
+                        </p>
+                        <p class="text-justify">
+                            Uno spazio (le nostre piattaforme di Learning e il Metaverso) dove avrai modo di partecipare
+                            a Live di lancio di progetti, conoscere nuovi modi di Business, seguire formazioni, poter
+                            partecipare a strategie che possono aiutarti a fare le scelte per una tua crescita personale
+                            e comprendere sempre di pi&ugrave; le infinite sfaccettature ed opportunit&agrave;.
+                        </p>
+                        <p class="text-justify">
+                            Cercheremo attraverso i nostri <b>strumenti</b> e i nostri <b>formatori</b> di offrire
+                            <b>informazioni chiare</b> e soprattutto formulate in base al livello di conoscenza in cui
+                            ognuno si trova.
+                        </p>
+                        <p class="text-justify">
+                            <b>Ci saranno corsi base per imparare l'ABC e muovere i primi passi fino ad arrivare a
+                                interazioni pi&ugrave; complese per chi &egrave; (o arriver&agrave;) a un
+                                livello tecnico superiore.</b>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="section text-center">
             <div class="container pt-5">
                 <div class="row py-5 justify-content-center">
-                    <div class="col-md-8">
+                    <!--<div class="col-md-8">
                         <p class="text-justify">
                             <b>Metaverso e NFT</b> saranno i principali argomenti trattati nel nostro spazio e proprio per questo l'<b>entrata nel portale METACUBE</b>, una piattaforma di <b>Learning e Metaverso</b>, pu&ograve; avvenire <b>solo attraverso l'acquisto di uno dei nostri 3 NFT originali</b>, ciascuno con caratteristiche e utilities differenti a seconda della tipologia.
                         </p>
@@ -170,51 +247,66 @@
                         <h4 class="small-claim d-block my-3 mt-5" id="pass">Selection <i>Elite</i> <b>Unique</b></h4>
                         <h1 class="claim d-block mb-3">Choose Your <b>C-pass</b></h1>
                         <p>Ogni pass sblocca servizi differenti</p>
+                    </div>-->
+                    <div class="col-md-8">
+                        <p class="text-justify">
+                            Solo con il tuo NFT di Metacube , che potrai acquistare , potrai avere accesso alle
+                            piattaforme (learning e Metaverso) per seguire i corsi formativi partendo dall&rsquo; ABC .
+                        </p>
+                        <p class="text-justify">
+                            Potrai avere accesso a tutta una serie di servizi online e OFFLINE con eventi gadget
+                            etc&#8230;.
+                        </p>
+                        <p class="text-justify">
+                            Una delle nostre parole d&rsquo;ordine &egrave; <b>semplicit&agrave;</b>, ovvero
+                            riuscire a trasmettere nozioni chiare e precise che possano far comprendere a tutti le
+                            <b>grandi opportunit&agrave;</b> di questo mondo.
+                        </p>
+                        <h4 class="small-claim d-block my-3 mt-5" id="pass">Selection, <i>Elite</i>, <b>Unique</b></h4>
+                        <h1 class="claim d-block mb-3">Choose Your <b>C-pass</b></h1>
+                        <p>Ogni pass sblocca servizi differenti</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="section text-center pass-area">
-            
-            <div class="container-flex ">
+            <div class="container-flex click-scroll">
                 <div class="row pt-5 m-0 justify-content-center">
                     <div class="col-lg-4 p-5 pass selection">
                         <img src="assets/images/label-selection.png" alt="selection" class="label-pass mx-auto">
                         <img src="assets/images/logo-selection.png" alt="selection" class="logo-pass mx-auto my-5">
-                        <h4>Service Name #1</h4>
                         <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
+                        <span class="d-block d-lg-none">
+                            <a href="#cube-selection" class="btn btn-selection inside my-3">Scopri</a>
+                        </span>
                     </div>
                     <div class="col-lg-4 p-5 pass elite">
                         <img src="assets/images/label-elite.png" alt="selection" class="label-pass mx-auto">
                         <img src="assets/images/logo-elite.png" alt="selection" class="logo-pass mx-auto my-5">
-                        <h4>Service Name #1</h4>
                         <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
+                        <span class="d-block d-lg-none">
+                            <a href="#cube-elite" class="btn btn-elite inside my-3">Scopri</a><br>
+                        </span>
                     </div>
                     <div class="col-lg-4 p-5 pass unique">
                         <img src="assets/images/label-unique.png" alt="selection" class="label-pass mx-auto">
                         <img src="assets/images/logo-unique.png" alt="selection" class="logo-pass mx-auto my-5">
-                        <h4>Service Name #1</h4>
                         <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
+                        <span class="d-block d-lg-none">
+                            <a href="#cube-unique" class="btn btn-unique inside my-3">Scopri</a><br>
+                        </span>
                     </div>
                 </div>
-                <div class="row pb-5 m-0 justify-content-center">
+                <div class="row pb-5 m-0 justify-content-center d-none d-lg-flex">
                     <div class="col-lg-4">
-                        <a href="#" class="btn btn-selection">Scopri</a>
+                        <a href="#cube-selection" class="btn btn-selection">Scopri</a>
                     </div>
                     <div class="col-lg-4">
-                        <a href="#" class="btn btn-elite">Scopri</a><br>
-                        <small>prezzo scontato fino al 31/08</small>
+                        <a href="#cube-elite" class="btn btn-elite mb-3">Scopri</a>
                     </div>
                     <div class="col-lg-4">
-                        <a href="#" class="btn btn-unique">Scopri</a><br>
-                        <small>prezzo scontato fino al 31/08</small>
+                        <a href="#cube-unique" class="btn btn-unique mb-3">Scopri</a>
                     </div>
                 </div>
             </div>
@@ -224,66 +316,96 @@
             <div class="container pt-5">
                 <div class="row py-5 justify-content-center text-center">
                     <div class="col-md-8">
-                        <h1 class="claim d-block mb-3"><b>Fino al 31/08/2022</b></h1>
+                        <h1 class="claim d-block mb-3">Ora in <b>Presale!</b></h1>
                         <p>
                             Qui scriverei qualche indicazione generica tipo:
-                            l’acquisto del’nft avverrà tramite Metamask su Opensea , pagamento possibile sia in cryptovalute che con carta di credito
+                            l’acquisto del’nft avverr&agrave; tramite Metamask su Opensea , pagamento possibile sia in
+                            cryptovalute che con carta di credito
                             e poi riferimento ai video di Peter che spiega come fare
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="container-flex" id="services">
-                <div class="row py-4 m-0">
-                    <div class="col-md-4 selection">
+            <div class="container-flex feat-list">
+                <div class="row my-5 mx-0" style="background: #eee">
+                    <div class="col-lg-4">
+                        <video preload="true" id="cube-selection" muted playsinline loop autoplay class="cubepass"
+                            alt="selection pass" poster="assets/images/selection_thumb_nologo.jpg">
+                            <source src="assets/images/selection.mp4" type="video/mp4">
+                            <source src="assets/images/selection.webm" type="video/mp4">
+                            <source src="assets/images/selection.ogv" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <div class="col-md-6 px-5">
-                        <img src="assets/images/title-selection.svg" class="mb-4"  style="max-height: 50px;width: auto;" alt="Selection">
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
+                    <div class="col-lg-6 p-5">
+                        <img src="assets/images/title-selection.svg" class="mb-4" style="max-height: 50px;width: auto;"
+                            alt="Selection">
+                        <h4>Accesso alle Live e progetti <b>Metacube</b></h4>
+                        <h4>Accesso piattaforma con Videocorsi Base</h4>
+                        <!--<p>Brief explanation</p>-->
+                        <h4>Accesso Galleria d&rsquo;arte <b>Metamorfosi</b></h4>
+                        <h4>Piattaforme <b>De.Fi.</b></h4>
+                        <h4>Accesso Aree <b>Metaverso MetaCube</b></h4>
+                        <!--<a href="#" class="btn btn-selection my-3">Acquista in Crypto</a>-->
+                        <!-- STRIPE TEST PROMO <a href="https://buy.stripe.com/test_eVa5le4gXdjR4co001" class="btn btn-selection my-3">Acquista</a>-->
+                        <a href="https://buy.stripe.com/6oE8yv17NgSS4Te149" class="btn btn-selection my-3">Acquista</a>
                     </div>
-                    <div class="col-md-2">
-                    </div>
-                </div>
-                <div class="row py-4 m-0 text-md-left">
-                    <div class="col-md-4 order-md-2 elite">
-                    </div>
-                    <div class="col-md-2 order-md-1">  
-                    </div>
-                    <div class="col-md-6 px-5 order-md-1">
-                        <img src="assets/images/title-elite.svg" class="mb-4" style="max-height: 50px;width: auto;" alt="Elite">
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
+                    <div class="col-lg-2">
                     </div>
                 </div>
-                <div class="row py-4 m-0">
-                    <div class="col-md-4 unique">
+                <div class="row my-5 mx-0" style="background: #eee">
+                    <div class="col-lg-4 order-md-2">
+                        <video preload="true" id="cube-elite" muted playsinline loop autoplay class="cubepass"
+                            alt="selection pass" poster="assets/images/elite_thumb_nologo.jpg">
+                            <source src="assets/images/elite.mp4" type="video/mp4">
+                            <source src="assets/images/elite.webm" type="video/mp4">
+                            <source src="assets/images/elite.ogv" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="col-lg-2 order-md-1">
+                    </div>
+                    <div class="col-lg-6 p-5 order-md-1 text-right">
+                        <img src="assets/images/title-elite.svg" class="mb-4" style="max-height: 50px;width: auto;"
+                            alt="Elite">
+                        <h4>Live trade strategy</h4>
+                        <h4>Strategy piattaforme <b>De.Fi.</b></h4>
+                        <h4>Accesso Aree <b>Metaverso MetaCube</b></h4>
+                        <h4>Creazione Utility Token <b>Mhexa</b></h4>
+                        <!--<a href="#" class="btn btn-elite my-3">Acquista in Crypto</a>-->
+                        <!-- STRIPE TEST PROMO <a href="https://buy.stripe.com/test_fZebJCaFl4Nl7oA5kn" class="btn btn-elite my-3">Acquista</a>-->
+                        <a href="https://buy.stripe.com/dR64if17NgSSetO14a" class="btn btn-elite my-3">Acquista</a>
+                    </div>
+                </div>
+                <div class="row my-5 mx-0" style="background: #eee">
+                    <div class="col-lg-4 ">
+                        <video preload="true" id="cube-unique" muted playsinline loop autoplay class="cubepass"
+                            alt="selection pass" poster="assets/images/unique_thumb_nologo.jpg">
+                            <source src="assets/images/unique.mp4" type="video/mp4">
+                            <source src="assets/images/unique.web" type="video/mp4">
+                            <source src="assets/images/unique.ogv" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
-                    <div class="col-md-6 px-5">
-                        <img src="assets/images/title-unique.svg" class="mb-4"  style="max-height: 50px;width: auto;" alt="Unique">
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
-                        <h4>Service Name #1</h4>
-                        <p>Brief explanation</p>
+                    <div class="col-lg-6 p-5">
+                        <img src="assets/images/title-unique.svg" class="mb-4" style="max-height: 50px;width: auto;"
+                            alt="Unique">
+                        <h4>Whitelist lancio <b>NFT</b></h4>
+                        <h4>Accesso esclusivo progetti in prelancio</h4>
+                        <h4>Live Esclusive</h4>
+                        <h4>Corsi avanzati trade <b>Forex-Crypto</b></h4>
+                        <h4>Accesso ad aree riservate <b>Metaverso Metacube</b></h4>
+                        <h4>Corso completo su <b>Click Funnels</b></h4>
+                        <h4>Accesso corso <b>Digital Marketing</b></h4>
+                        <h4>Creazione Utility Token <b>Mhexa</b> X 2</h4>
+                        <h4>Esclusivi eventi Offline</h4>
+                        <h4><i>&#8230;and more more more</i></h4>
+                        <!--<a href="#" class="btn btn-unique my-3">Acquista in Crypto</a>-->
+                        <!-- STRIPE TEST PROMO <a href="https://buy.stripe.com/test_eVafZS6p54NldMYdQS" class="btn btn-unique my-3">Acquista</a>-->
+                        <a href="https://buy.stripe.com/dR62a7aIn7ii5Xi7sz" class="btn btn-unique my-3">Acquista</a>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2">
                     </div>
                 </div>
             </div>
@@ -295,52 +417,474 @@
                     </div>
 
                     <div class="col-md-6">
-                        <video id="player" controls="controls" preload="true" muted playsinline class="mistery-cube" alt="MISTERY CUBE">
-                        <source  src="assets/images/mistery_cube_2.mp4" type="video/mp4">
-                        <source  src="assets/images/mistery_cube_2.webm" type="video/webm">
-                        <source  src="assets/images/mistery_cube_2.ogv" type="video/ogv">
-                        Your browser does not support the video tag.
-                    </video>
+                        <video id="player" controls="controls" preload="true" muted playsinline class="mistery-cube"
+                            alt="MISTERY CUBE">
+                            <source src="assets/images/mistery_cube_2.mp4" type="video/mp4">
+                            <source src="assets/images/mistery_cube_2.webm" type="video/webm">
+                            <source src="assets/images/mistery_cube_2.ogv" type="video/ogv">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="section py-5 services" id="services">
+            <div class="container py-5">
+                <div class="row pb-5">
+                    <div class="col-md-12 text-center">
+                        <h2 class="claim">More You <b style="color: #000">Learn</b>, More You <b
+                                style="color: #000">Earn</b></h2>
+                        <h3 class="claim"><small>Pi&ugrave; impari, pi&ugrave; guadagni</small></h3>
+                        <p><b><i>Metacube</i></b>, tramite il <b>proprio NFT</b>, offre l&rsquo;accesso a un&rsquo;ampia
+                            <b>gamma di servizi</b> (in continuo aggiornamento):</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <ol style="z-index: 2; position: relative">
+                            <li>Live esclusive con accesso a formazioni sui progetti adottati da Metacube</li>
+                            <li>Accesso ad Accademia con Video Corsi</li>
+                            <li>Sessioni dedicate ed esclusive per lancio NFT, Trade, Token, De.Fi e Metaverso</li>
+                            <li>Accesso esclusivo a Canale Discord</li>
+                            <li>Accesso a conferenze Live che avverrano sia Online che Offline</li>
+                            <li>Accesso a tutti servizi di Metacube nei metaversi</li>
+                            <li>Accesso immediato a Whitelist di NFT lanciati da Metacube </li>
+                            <li>Accesso a galleria Arte di artisti che propongono le proprie opere </li>
+                            <li>Eventi Offline (viaggi, ristoranti, eventi live&#8230;etc)</li>
+                            <li>Support con Live personali (2 ore al mese??)</li>
+                            <li>Accesso progetti e lancio nuove Coin </li>
+                            <li>Corsi esclusivi di Trade (Forex e Crypto)</li>
+                            <li>Live su sviluppo e strategie in piattaforme De.Fi.</li>
+                            <li>Check esclusivi a qualsiasi eventi di Metacube</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="section py-5">
-            <div class="container py-5 text-center">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="claim">F.A.Q.</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Come posso acquistare un <b>NFT Metacube Pass</b>?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <p>
+                                            Prima del Lancio sul <b>MarketPlace Opensea</b> puoi acquistarlo in Presale
+                                            direttamente dai link che trovi nei vari <b>MetaCubePass</>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Posso fare Upgrade una volta acquistato un <b>NFT MetacubePass</b> a NFT con
+                                            pi&ugrave; servizi?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <p>No. Ogni NFT ha i propri servizi correlati. Un Upgrade &egrave; solo
+                                            possibile con acquisto di altro NFT <b>MetacubePass</b>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Gli <b>NFT</b> hanno delle rarit&agrave; particolari?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <p>
+                                            <b>NFT 'Selection'</b> nessuno.<br>
+                                            <b>NFT '&Eacute;lite'</b> e <b>'Unique'</b> avranno utilit&agrave; uniche e
+                                            una quantit&agrave; di Token per ogni <b>NFT MetacubePass</b>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            Posso vendere il mio <b>NFT</b>?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <p>
+                                            Certo. Una volta acquistato il <b>NFT</b> (Non Fungibile Token)
+                                            <b>MetaCubePass</b> &egrave; tuo e puoi venderlo quando vuoi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            Quale Wallet devo usare per <b>NFT MetaCubePass</b>?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingFive">
+                                    <div class="panel-body">
+                                        <p>
+                                            Ti basta avere <b>Metamask</b> dove potrai ricevere il tuo <b>NFT</b>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            Ci sono commissione aggiuntive per ricevere il mio <b>NFT</b>?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingSix">
+                                    <div class="panel-body">
+                                        <p>
+                                            Si, sono chiamate <b>GAS FEE</b> e sono impostati direttamente dalla
+                                            piattaforma (MarketPlace) e non da <b>Metacube</b>. Le <b>GAS FEE</b> sono i
+                                            costi di una qualsiasi transazione nel mondo Blockchain e variano dal Tipo
+                                            di Rete e dal &lsquo;Traffico&rsquo; che al momento troviamo nel fare
+                                            operazione (comunque niente di cos&igrave; rilevante)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSeven">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseSeven" aria-expanded="false"
+                                            aria-controls="collapseSeven">
+                                            Cosa ricever&ograve; all&rsquo;acquisto in Presale?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingSeven">
+                                    <div class="panel-body">
+                                        <p>
+                                            Riceverai un prova di acquisto direttamente sul tuo Metamask ed avrai
+                                            gi&agrave; accesso ai servizi attivi per il Tuo <b>.NFT MetaCubePass</b>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEight">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseEight" aria-expanded="false"
+                                            aria-controls="collapseEight">
+                                            Posso avere pi&ugrave; <b>NFT MetaCubePass</b>?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingEight">
+                                    <div class="panel-body">
+                                        <p>
+                                            Certamente. Anche se non necessario. Pu&ograve; averne di pi&ugrave; se
+                                            decidi che possono avere valore nel tempo e puoi venderli al prezzo che
+                                            credi oppure ne puoi avere di pi&ugrave; se decidi di possederne 1 per tipo
+                                            oppure per fare Accesso a Servi aggiuntivi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingNine">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseNine" aria-expanded="false"
+                                            aria-controls="collapseNine">
+                                            Quanto <b>NFT MetaCubePass</b> saranno creati?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingNine">
+                                    <div class="panel-body">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <p>Selection</p>
+                                                </td>
+                                                <td>
+                                                    <p>555</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Elite</p>
+                                                </td>
+                                                <td>
+                                                    <p>444</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Unique</p>
+                                                </td>
+                                                <td>
+                                                    <p>333</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTen">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseTen" aria-expanded="false"
+                                            aria-controls="collapseTen">
+                                            Quanto tempo vale il mio <b>NFT MetaCubePass</b>?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTen" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingTen">
+                                    <div class="panel-body">
+                                        <p>
+                                            Per sempre. Detenere <b>NFT MetaCubePass</b> ti permette per sempre di
+                                            usufruire di tutti i servizi di <b>MetaCubeSpace</b>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEleven">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseEleven" aria-expanded="false"
+                                            aria-controls="collapseEleven">
+                                            Quando avr&ograve; accesso a tutti i servizi ed alle piattaforme di
+                                            <b>Learning</b> e <b>Metaverso</b>?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingEleven">
+                                    <div class="panel-body">
+                                        <p>
+                                            Come da RoadMap avrai accesso immediato alle Live settimanali ed hai canali
+                                            <b>Discord</b> e <b>Telegram</b> preposti. Entro Luglio 2022 accesso a
+                                            <b>Piattaforma Learning</b>. Q4 distribuzione di <b>NFT MetaCubePass</b> ed
+                                            accesso primo <b>Metaverso</b>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwelve">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseTwelve" aria-expanded="false"
+                                            aria-controls="collapseTwelve">
+                                            Gli <b>NFT MetaCubePass</b> hanno una nicchia Globale?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingTwelve">
+                                    <div class="panel-body">
+                                        <p>
+                                            Certamente. La nicchia iniziale partir&agrave; con Info in italiano ma
+                                            gi&agrave; la piattaforma di Learning sar&agrave; integrato in inglese e
+                                            spagnolo and more&#8230;
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThirteen">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseThirteen" aria-expanded="false"
+                                            aria-controls="collapseThirteen">
+                                            I possessori di <b>NFT MetaCubePass</b> avranno accesso a servizi offline?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingThirteen">
+                                    <div class="panel-body">
+                                        <p>
+                                            Certamente. I servizi diversi dei 3 differenti <b>MetaCubePass</b> daranno
+                                            accesso a servizi ed eventi offline.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFourteen">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseFourteen" aria-expanded="false"
+                                            aria-controls="collapseFourteen">
+                                            Cos&rsquo;&egrave; un NFT?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingFourteen">
+                                    <div class="panel-body">
+                                        <p>
+                                            NFT sta per "Non-Fungible Token".&#160;Un NFT esiste su una Blockchain ed
+                                            &egrave; del tutto unico, con i suoi Metadati che lo distinguono l'uno
+                                            dall'altro.&#160;Ogni NFT ha il proprio valore dettato prettamente dal
+                                            mercato tramite &lsquo;Domanda&Offerta&rsquo;. Ogni NFT Unico &egrave;
+                                            di piena propriet&agrave; di chi lo possiede.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFifteen">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseFifteen" aria-expanded="false"
+                                            aria-controls="collapseFifteen">
+                                            Quale utilit&agrave; posso avere a possedere NFT MetacubePass?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingFifteen">
+                                    <div class="panel-body">
+                                        <p>
+                                            Accesso al Know How di tutte le opportunit&agrave; che MetaCube esamina ed
+                                            essere uno dei pochi ad accesso a tutti i servizi presenti e Futuri di
+                                            MetaCubeSpace. I nostri servizi saranno rilasciati solo ai 1332 possessori
+                                            di NFT MetaCubePass e sarai tu stesso a decidere di venderlo e cedere il
+                                            posto ad un altro e non MetaCube. Tenerlo di dar&agrave; accesso a Vita a
+                                            tutto il mondo MetaCubeSpace.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section py-5 dark" id="services" style="overflow: hidden">
+            <div class="container text-center">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="claim"><span class="step1">More You <b>Learn</b>,</span> <span class="step2">More You <b>Earn</b></span></h2>
-                        <h3 class="claim"><span class="step1"><small>Più impari, più guadagni</h3>
-                            <p>Metacube, tramite il proprio NFT, offre  l’accesso a un’ampia gamma di servizi (in continuo aggiornamento):</p>
+                        <h5>Coming Soon</h5>
+                        <h2 class="claim"><b> <span style="color: #CCCC66"><b>One</b></span> Cube , <span
+                                    style="color: #CCCC66"><b>Many</b></span> Faces</h2>
+
+                        <div class="contain">
+                            <div class="cube" id="cube-single">
+                                <div class="top"></div>
+                                <div class="bottom"></div>
+                                <div class="front"></div>
+                                <div class="back"></div>
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section py-5" style="background: #ff0">
+        <div class="section py-3 services-2">
             <div class="container py-5 text-center">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <ul>
-                            <li>sdfdfdsfdsf</li>
-                            <li>sdfdfdsfdsf</li>
-                            <li>sdfdfdsfdsf</li>
-                            <li>sdfdfdsfdsf</li>
-                            <li>sdfdfdsfdsf</li>
-                        </ul>
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-2 px-4">
+                        <img src="assets/images/mc-cryptopass.svg" alt="Metacube Cryptopass">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-4">
+                        <img src="assets/images/mc-learning.svg" alt="Metacube Learning">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-4">
+                        <img src="assets/images/mc-trade.svg" alt="Metacube Trade">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-4">
+                        <img src="assets/images/mc-nft.svg" alt="Metacube NFT">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-4">
+                        <img src="assets/images/mc-metaverse.svg" alt="Metacube Metaverse">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-4">
+                        <img src="assets/images/mc-defi.svg" alt="Metacube DeFI">
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- FOOTER -->
-            
-        <!--<div class="container  p-0 mt-5 text-center">
+
+        <div class="section" id="contacts">
+            <div class="container pt-5">
+                <div class="row py-5 justify-content-center text-center">
+                    <div class="col-md-8">
+                        <a href="https://discord.com/channels/973192297812484106/973192297812484109"
+                            class="btn btn-custom">Enjoy Our Cube<b>Munity</b> on Discord <i
+                                class="fa-brands fa-discord"></i></a>
+
+                        <p class="mt-5">Per <b>saperne di pi&ugrave;</b> contattaci</p>
+                        <p><span class="px-3"><a href="tel:info@metacubespace.com"><i class="fa-solid fa-phone"></i> +39
+                                    123 4567891</a></span> <span class="px-3"><a href="mailto:info@metacubespace.com"><i
+                                        class="fa-solid fa-envelope"></i> info@metacubespace.com</a></span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER -->
+
+            <!--<div class="container  p-0 mt-5 text-center">
             <div class="row">
                 <div class="col-md-12 box hollow footer p-4 p-sm-5">
                     <div class="row">
                         <div class="col-12">
                             
-                            <img data-src="assets/images/logo.svg" alt="logo" class="img-fluid lozad logo-footer"
+                            <img data-src="assets/images/logo.svg" alt="logo" class="img-fluid lozad logo-footer">
                             <p class="mt-3">Via dell’Industria 9/A 57016<br>
                                 Rosignano Solvay (LI)<br>
                                 P.IVA 1234567890
@@ -358,283 +902,672 @@
                 </div>
             </div>
         </div>-->
-        
 
-        <!-- modali e altri elementi -->
 
-        <div class="modal fade m-0 p-0" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centeredOLD" role="document">
-                <div class="modal-content">
-                    <div class="modal-header" style="position: absolute; top: 0; right:0; z-index: 2000">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">
-								<svg class="bi" width="32" height="32">
-									<use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#x" />
-								</svg>
-							</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-4 p-md-5">
-						<h4>Titolare del Trattamento dei Dati</h4>
-                        <h5>Metamorfosi S.r.l. - via dell'Industria 9/A 57016 Indirizzo email del Titolare: info@Metamorfosi.it</h5>
-                        <h4>Tipologie di Dati raccolti</h4>
-                        Fra i Dati Personali raccolti da questa Applicazione, in modo autonomo o tramite terze parti, ci sono: email; nome; cognome; Dati di utilizzo; Cookie; Dati comunicati durante l'utilizzo del servizio; numero di telefono; varie tipologie di Dati; password. Dettagli completi su ciascuna tipologia di dati raccolti sono forniti nelle sezioni dedicate di questa privacy policy o mediante specifici testi informativi visualizzati prima della raccolta dei dati stessi. I Dati Personali possono essere
-                        liberamente forniti dall'Utente o, nel caso di Dati di Utilizzo, raccolti automaticamente durante l'uso di questa Applicazione. Se non diversamente specificato, tutti i Dati richiesti da questa Applicazione sono obbligatori. Se l&rsquo;Utente rifiuta di comunicarli, potrebbe essere impossibile per questa Applicazione fornire il Servizio. Nei casi in cui questa Applicazione indichi alcuni Dati come facoltativi, gli Utenti sono liberi di astenersi dal comunicare tali Dati, senza che ci&ograve; abbia alcuna
-                        conseguenza sulla disponibilit&agrave; del Servizio o sulla sua operativit&agrave;. Gli Utenti che dovessero avere dubbi su quali Dati siano obbligatori, sono incoraggiati a contattare il Titolare. L&rsquo;eventuale utilizzo di Cookie - o di altri strumenti di tracciamento - da parte di questa Applicazione o dei titolari dei servizi terzi utilizzati da questa Applicazione, ove non diversamente precisato, ha la finalit&agrave; di fornire il Servizio richiesto dall'Utente, oltre alle ulteriori finalit&agrave; descritte nel
-                        presente documento e nella Cookie Policy, se disponibile. L'Utente si assume la responsabilit&agrave; dei Dati Personali di terzi ottenuti, pubblicati o condivisi mediante questa Applicazione e garantisce di avere il diritto di comunicarli o diffonderli, liberando il Titolare da qualsiasi responsabilit&agrave; verso terzi.
-                        <h3>Modalit&agrave; e luogo del trattamento dei Dati raccolti</h3> 
-                        <h4>Modalit&agrave; di trattamento</h4>
-                        Il Titolare adotta le opportune misure di sicurezza volte ad impedire l&rsquo;accesso, la divulgazione, la modifica o la distruzione non autorizzate dei Dati Personali. Il trattamento viene effettuato mediante strumenti informatici e/o telematici, con modalit&agrave; organizzative e con logiche strettamente correlate alle finalit&agrave; indicate. Oltre al Titolare, in alcuni casi, potrebbero avere accesso ai Dati altri soggetti coinvolti nell&rsquo;organizzazione di questa Applicazione (personale amministrativo,
+            <!-- modali e altri elementi -->
 
-                        commerciale, marketing, legali, amministratori di sistema) ovvero soggetti esterni (come fornitori di servizi tecnici terzi, corrieri postali, hosting provider, societ&agrave; informatiche, agenzie di comunicazione) nominati anche, se necessario, Responsabili del Trattamento da parte del Titolare. L&rsquo;elenco aggiornato dei Responsabili potr&agrave; sempre essere richiesto al Titolare del Trattamento.
-                        <h4>Base giuridica del trattamento</h4>
-                        Il Titolare tratta Dati Personali relativi all&rsquo;Utente in caso sussista una delle seguenti condizioni:
-                        <ul>
-                        <li>l&rsquo;Utente ha prestato il consenso per una o pi&ugrave; finalit&agrave; specifiche; Nota: in alcuni ordinamenti il Titolare pu&ograve; essere autorizzato a trattare Dati Personali senza che debba sussistere il consenso dell&rsquo;Utente o un&rsquo;altra delle basi giuridiche specificate di seguito, fino a quando l&rsquo;Utente non si opponga (&ldquo;opt-out&rdquo;) a tale trattamento. Ci&ograve; non &egrave; tuttavia applicabile qualora il trattamento di Dati Personali sia regolato dalla legislazione europea in materia di protezione dei Dati Personali;</li>
-                        <li>il trattamento &egrave; necessario all'esecuzione di un contratto con l&rsquo;Utente e/o all'esecuzione di misure precontrattuali;</li>
-                        <li>il trattamento &egrave; necessario per adempiere un obbligo legale al quale &egrave; soggetto il Titolare;</li>
-                        <li>il trattamento &egrave; necessario per l'esecuzione di un compito di interesse pubblico o per l'esercizio di pubblici poteri di cui &egrave; investito il Titolare;</li>
-                        <li>il trattamento &egrave; necessario per il perseguimento del legittimo interesse del Titolare o di terzi.</li>
-                        </ul>
-                        &Egrave; comunque sempre possibile richiedere al Titolare di chiarire la concreta base giuridica di ciascun trattamento ed in particolare di specificare se il trattamento sia basato sulla legge, previsto da un contratto o necessario per concludere un contratto.
-                        <h4>Luogo</h4>
-                        I Dati sono trattati presso le sedi operative del Titolare ed in ogni altro luogo in cui le parti coinvolte nel trattamento siano localizzate. Per ulteriori informazioni, contatta il Titolare. I Dati Personali dell&rsquo;Utente potrebbero essere trasferiti in un paese diverso da quello in cui l&rsquo;Utente si trova. Per ottenere ulteriori informazioni sul luogo del trattamento l&rsquo;Utente pu&ograve; fare riferimento alla sezione relativa ai dettagli sul trattamento dei Dati Personali. L&rsquo;Utente ha diritto a ottenere
-                        informazioni in merito alla base giuridica del trasferimento di Dati al di fuori dell&rsquo;Unione Europea o ad un&rsquo;organizzazione internazionale di diritto internazionale pubblico o costituita da due o pi&ugrave; paesi, come ad esempio l&rsquo;ONU, nonch&eacute; in merito alle misure di sicurezza adottate dal Titolare per proteggere i Dati. L&rsquo;Utente pu&ograve; verificare se abbia luogo uno dei trasferimenti appena descritti esaminando la sezione di questo documento relativa ai dettagli sul trattamento di Dati Personali o
-                        chiedere informazioni al Titolare contattandolo agli estremi riportati in apertura.
-                        <h4>Periodo di conservazione</h4>
-                        I Dati sono trattati e conservati per il tempo richiesto dalle finalit&agrave; per le quali sono stati raccolti. Pertanto:
-                        <ul>
-                        <li>I Dati Personali raccolti per scopi collegati all&rsquo;esecuzione di un contratto tra il Titolare e l&rsquo;Utente saranno trattenuti sino a quando sia completata l&rsquo;esecuzione di tale contratto.</li>
-                        <li>I Dati Personali raccolti per finalit&agrave; riconducibili all&rsquo;interesse legittimo del Titolare saranno trattenuti sino al soddisfacimento di tale interesse. L&rsquo;Utente pu&ograve; ottenere ulteriori informazioni in merito all&rsquo;interesse legittimo perseguito dal Titolare nelle relative sezioni di questo documento o contattando il Titolare.</li>
-                        </ul>
-                        Quando il trattamento &egrave; basato sul consenso dell&rsquo;Utente, il Titolare pu&ograve; conservare i Dati Personali pi&ugrave; a lungo sino a quando detto consenso non venga revocato. Inoltre, il Titolare potrebbe essere obbligato a conservare i Dati Personali per un periodo pi&ugrave; lungo in ottemperanza ad un obbligo di legge o per ordine di un&rsquo;autorit&agrave;. Al termine del periodo di conservazione i Dati Personali saranno cancellati. Pertanto, allo spirare di tale termine il diritto di accesso, cancellazione, rettificazione
-                        ed il diritto alla portabilit&agrave; dei Dati non potranno pi&ugrave; essere esercitati.
-                        <h4>Finalit&agrave; del Trattamento dei Dati raccolti</h4>
-                        I Dati dell&rsquo;Utente sono raccolti per consentire al Titolare di fornire i propri Servizi, cos&igrave; come per le seguenti finalit&agrave;: Contattare l'Utente, Gestione contatti e invio di messaggi, Visualizzazione di contenuti da piattaforme esterne, Interazione con le piattaforme di live chat, Statistica, Hosting ed infrastruttura backend, Gestione dei database di Utenti, Remarketing e behavioral targeting, Pubblicit&agrave;, Registrazione ed autenticazione, Gestione dei pagamenti e Gestione dei tag. Per ottenere
-                        ulteriori informazioni dettagliate sulle finalit&agrave; del trattamento e sui Dati Personali concretamente rilevanti per ciascuna finalit&agrave;, l&rsquo;Utente pu&ograve; fare riferimento alle relative sezioni di questo documento.
-                        <h4>Dettagli sul trattamento dei Dati Personali</h4>
-                        I Dati Personali sono raccolti per le seguenti finalit&agrave; ed utilizzando i seguenti servizi:
-                        <h3>Contattare l'Utente</h3>
-                        <h4>Mailing list o newsletter (questa Applicazione)</h4>
-                        Con la registrazione alla mailing list o alla newsletter, l&rsquo;indirizzo email dell&rsquo;Utente viene automaticamente inserito in una lista di contatti a cui potranno essere trasmessi messaggi email contenenti informazioni, anche di natura commerciale e promozionale, relative a questa Applicazione. L'indirizzo email dell'Utente potrebbe anche essere aggiunto a questa lista come risultato della registrazione a questa Applicazione o dopo aver effettuato un acquisto. Dati Personali raccolti: cognome;
-                        email; nome.
-                        <h4>Modulo di contatto (questa Applicazione)</h4>
-                        L&rsquo;Utente, compilando con i propri Dati il modulo di contatto, acconsente al loro utilizzo per rispondere alle richieste di informazioni, di preventivo, o di qualunque altra natura indicata dall&rsquo;intestazione del modulo. Dati Personali raccolti: email; nome.
-                        <h4>Gestione contatti e invio di messaggi</h4>
-                        Questo tipo di servizi consente di gestire un database di contatti email, contatti telefonici o contatti di qualunque altro tipo, utilizzati per comunicare con l&rsquo;Utente. Questi servizi potrebbero inoltre consentire di raccogliere dati relativi alla data e all&rsquo;ora di visualizzazione dei messaggi da parte dell&rsquo;Utente, cos&igrave; come all&rsquo;interazione dell'Utente con essi, come le informazioni sui click sui collegamenti inseriti nei messaggi.
-                        <h4>Mailchimp (The Rocket Science Group, LLC.)</h4>
-                        Mailchimp &egrave; un servizio di gestione indirizzi e invio di messaggi email fornito da The Rocket Science Group, LLC. Dati Personali raccolti: cognome; email; nome. Luogo del trattamento: Stati Uniti &ndash;
-                        <a href="https://mailchimp.com/legal/privacy/">Privacy Policy</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Postmark (Wildbit LLC)</h4>
-                        Postmark &egrave; un servizio di gestione indirizzi e invio di messaggi email fornito da Wildbit LLC. Dati Personali raccolti: cognome; email; nome; varie tipologie di Dati. Luogo del trattamento: Stati Uniti &ndash;
-                        <a href="https://wildbit.com/privacy-policy">Privacy Policy</a>.
-                        <h4>Gestione dei database di Utenti</h4>
-                        Questo tipo di servizi permettono al Titolare di costruire profili utente partendo da un indirizzo email, il nome o qualunque altra informazione che l'Utente fornisce a questa Applicazione, cos&igrave; come di tracciare le attivit&agrave; dell'Utente tramite funzionalit&agrave; statistiche. Questi Dati Personali potrebbero inoltre venire incrociati con informazioni sull'Utente disponibili pubblicamente (come i profili sui social network) ed usati per costruire profili privati che il Titolare pu&ograve; visualizzare ed
-                        utilizzare per migliorare questa Applicazione. Alcuni di questi servizi potrebbero inoltre permettere l'invio programmato di messaggi all'Utente, come email basate su azioni specifiche compiute su questa Applicazione.
-                        <h4>HubSpot CRM (HubSpot, Inc.)</h4>
-                        HubSpot CRM &egrave; un servizio di gestione dei database di Utenti fornito da HubSpot, Inc. Dati Personali raccolti: email; numero di telefono; varie tipologie di Dati secondo quanto specificato dalla privacy policy del servizio. Luogo del trattamento: Stati Uniti &ndash;
-                        <a href="https://legal.hubspot.com/privacy-policy">Privacy Policy</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Gestione dei pagamenti</h4>
-                        I servizi di gestione dei pagamenti permettono a questa Applicazione di processare pagamenti tramite carta di credito, bonifico bancario o altri strumenti. I dati utilizzati per il pagamento vengono acquisiti direttamente dal gestore del servizio di pagamento richiesto senza essere in alcun modo trattati da questa Applicazione. Alcuni di questi servizi potrebbero inoltre permettere l'invio programmato di messaggi all'Utente, come email contenenti fatture o notifiche riguardanti il pagamento.
-                        <h4>Stripe (Stripe Inc)</h4>
-                        Stripe &egrave; un servizio di pagamento fornito da Stripe Inc. Dati Personali raccolti: varie tipologie di Dati secondo quanto specificato dalla privacy policy del servizio. Luogo del trattamento: Stati Uniti &ndash;
-                        <a href="https://stripe.com/us/privacy">Privacy Policy</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Gestione dei tag</h4>
-                        Questo tipo di servizi &egrave; funzionale alla gestione centralizzata dei tag o script utilizzati su questa Applicazione. L'uso di tali servizi comporta il fluire dei Dati dell'Utente attraverso gli stessi e, se del caso, la loro ritenzione.
-                        <h4>Google Tag Manager (Google Ireland Limited)</h4>
-                        Google Tag Manager &egrave; un servizio di gestione dei tag fornito da Google Ireland Limited. Dati Personali raccolti: Cookie; Dati di utilizzo. Luogo del trattamento: Irlanda &ndash;
-                        <a href="https://policies.google.com/privacy">Privacy Policy</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Hosting ed infrastruttura backend</h4>
-                        Questo tipo di servizi ha la funzione di ospitare Dati e file che permettono a questa Applicazione di funzionare, ne consentono la distribuzione e mettono a disposizione un'infrastruttura pronta all'uso per erogare specifiche funzionalit&agrave; di questa Applicazione. Alcuni servizi tra quelli elencati di seguito, se presenti, possono funzionare su server geograficamente distribuiti, rendendo difficile determinare l'effettiva ubicazione in cui sono conservati i Dati Personali.
-                        <h4>Heroku (Salesforce.com, inc.)</h4>
-                        Heroku &egrave; un servizio di hosting fornito da Salesforce.com, inc. Dati Personali raccolti: varie tipologie di Dati secondo quanto specificato dalla privacy policy del servizio. Luogo del trattamento: Stati Uniti &ndash;
-                        <a href="https://www.salesforce.com/company/privacy/full_privacy.jsp">Privacy Policy</a>.
-                        <h4>Interazione con le piattaforme di live chat</h4>
-                        Questo tipo di servizi permette di interagire con le piattaforme di live chat, gestite da soggetti terzi, direttamente dalle pagine di questa Applicazione. Ci&ograve; permette all'Utente di contattare il servizio di supporto di questa Applicazione o a questa Applicazione di contattare l'Utente mentre sta navigando le sue pagine. Nel caso in cui sia installato un servizio di interazione con le piattaforme di live chat, &egrave; possibile che, anche nel caso gli Utenti non utilizzino il servizio, lo stesso
-                        raccolga Dati di Utilizzo relativi alle pagine in cui &egrave; installato. Inoltre, le conversazioni della live chat potrebbero essere registrate.
-                        <h4>Facebook Messenger Customer Chat (Facebook, Inc.)</h4>
-                        Il Facebook Messenger Customer Chat &egrave; un servizio di interazione con la piattaforma di live chat Facebook Messenger, fornito da Facebook, Inc. Dati Personali raccolti: Cookie; Dati comunicati durante l'utilizzo del servizio; Dati di utilizzo. Luogo del trattamento: Stati Uniti &ndash;
-                        <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Pubblicit&agrave;</h4>
-                        Questo tipo di servizi consentono di utilizzare i Dati dell&rsquo;Utente per finalit&agrave; di comunicazione commerciale in diverse forme pubblicitarie, quali il banner, anche in relazione agli interessi dell&rsquo;Utente. Ci&ograve; non significa che tutti i Dati Personali vengano utilizzati per questa finalit&agrave;. Dati e condizioni di utilizzo sono indicati di seguito. Alcuni dei servizi di seguito indicati potrebbero utilizzare Cookie per identificare l&rsquo;Utente o utilizzare la tecnica del behavioral retargeting, ossia
-                        visualizzare annunci pubblicitari personalizzati in base agli interessi e al comportamento dell&rsquo;Utente, rilevati anche al di fuori di questa Applicazione. Per avere maggiori informazioni in merito, ti suggeriamo di verificare le informative privacy dei rispettivi servizi. In aggiunta alle possibilit&agrave; di effettuare l'opt-out offerte dai servizi di seguito riportati, l'Utente pu&ograve; optare per l'esclusione dell&rsquo;uso di cookie da parte di un servizio di terzi per alcune funzionalit&agrave; pubblicitarie
-                        visitando la
-                        <a href="http://optout.networkadvertising.org/">pagina di opt-out della Network Advertising Initiative</a>. Gli Utenti possono anche scegliere di non partecipare a determinate funzionalit&agrave; pubblicitarie attraverso le corrispondenti opzioni di configurazione del dispositivo, come le opzioni di configurazione pubblicitaria del dispositivo mobile o la configurazione pubblicitaria generica.
-                        <h4>Pubblico simile di Facebook (Facebook, Inc.)</h4>
-                        Pubblico simile di Facebook &egrave; un servizio di advertising e di targeting comportamentale fornito da Facebook, Inc. che utilizza i Dati raccolti attraverso il servizio Pubblico personalizzato di Facebook al fine di mostrare annunci pubblicitari a Utenti con comportamenti simili a Utenti che sono gi&agrave; in una lista di Pubblico personalizzato sulla base del loro precedente utilizzo di questa Applicazione o della loro interazione con contenuti rilevanti attraverso le applicazioni e i servizi di
-                        Facebook. Sulla base di questi Dati, gli annunci personalizzati saranno mostrati agli Utenti suggeriti da Pubblico simile di Facebook. Gli Utenti possono scegliere di non utilizzare i cookie di Facebook per la personalizzazione degli annunci visitando questa
-                        <a href="https://www.aboutads.info/choices/">pagina di opt-out </a>. Dati Personali raccolti: Cookie; Dati di utilizzo. Luogo del trattamento: Stati Uniti &ndash; <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a> &ndash; <a href="https://www.aboutads.info/choices/">Opt Out</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Registrazione ed autenticazione</h4>
-                        Con la registrazione o l&rsquo;autenticazione l&rsquo;Utente consente all&rsquo;Applicazione di identificarlo e di dargli accesso a servizi dedicati. A seconda di quanto indicato di seguito, i servizi di registrazione e di autenticazione potrebbero essere forniti con l&rsquo;ausilio di terze parti. Qualora questo avvenga, questa applicazione potr&agrave; accedere ad alcuni Dati conservati dal servizio terzo usato per la registrazione o l&rsquo;identificazione.
-                        <h4>Registrazione diretta (questa Applicazione)</h4>
-                        L&rsquo;Utente si registra compilando il modulo di registrazione e fornendo direttamente a questa Applicazione i propri Dati Personali. Dati Personali raccolti: cognome; email; nome; password.
-                        <h4>Remarketing e behavioral targeting</h4>
-                        Questo tipo di servizi consente a questa Applicazione ed ai suoi partner di comunicare, ottimizzare e servire annunci pubblicitari basati sull'utilizzo passato di questa Applicazione da parte dell'Utente. Questa attivit&agrave; viene effettuata tramite il tracciamento dei Dati di Utilizzo e l'uso di Cookie, informazioni che vengono trasferite ai partner a cui l'attivit&agrave; di remarketing e behavioral targeting &egrave; collegata. Alcuni servizi offrono un'opzione di remarketing basata sulle liste di indirizzi
-                        email. In aggiunta alle possibilit&agrave; di effettuare l'opt-out offerte dai servizi di seguito riportati, l'Utente pu&ograve; optare per l'esclusione dell&rsquo;uso di cookie da parte di un servizio di terzi per alcune funzioni di remarketing visitando la
-                        <a href="http://optout.networkadvertising.org/">pagina di opt-out della Network Advertising Initiative</a>. Gli Utenti possono anche scegliere di non partecipare a determinate funzionalit&agrave; pubblicitarie attraverso le corrispondenti opzioni di configurazione del dispositivo, come le opzioni di configurazione pubblicitaria del dispositivo mobile o la configurazione pubblicitaria generica.
-                        <h4>Pubblico personalizzato di Facebook (Facebook, Inc.)</h4>
-                        Pubblico personalizzato di Facebook &egrave; un servizio di remarketing e di targeting comportamentale fornito da Facebook, Inc. che collega l'attivit&agrave; di questa Applicazione con la rete pubblicitaria di Facebook. Gli Utenti possono scegliere di non utilizzare i cookie di Facebook per la personalizzazione degli annunci visitando questa
-                        <a href="https://www.aboutads.info/choices/">pagina di opt-out</a>. Dati Personali raccolti: Cookie; email. Luogo del trattamento: Stati Uniti &ndash; <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a> &ndash; <a href="https://www.aboutads.info/choices/">Opt Out</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Statistica</h4>
-                        I servizi contenuti nella presente sezione permettono al Titolare del Trattamento di monitorare e analizzare i dati di traffico e servono a tener traccia del comportamento dell&rsquo;Utente.
-                        <h4>Google Analytics (Google Ireland Limited)</h4>
-                        Google Analytics &egrave; un servizio di analisi web fornito da Google Ireland Limited (&ldquo;Google&rdquo;). Google utilizza i Dati Personali raccolti allo scopo di tracciare ed esaminare l&rsquo;utilizzo di questa Applicazione, compilare report e condividerli con gli altri servizi sviluppati da Google. Google potrebbe utilizzare i Dati Personali per contestualizzare e personalizzare gli annunci del proprio network pubblicitario. Dati Personali raccolti: Cookie; Dati di utilizzo. Luogo del trattamento: Irlanda &ndash;
-                        <a href="https://policies.google.com/privacy">Privacy Policy</a> &ndash; <a href="https://tools.google.com/dlpage/gaoptout?hl=en">Opt Out</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Monitoraggio conversioni di Facebook Ads (pixel di Facebook) (Facebook, Inc.)</h4>
-                        Il monitoraggio conversioni di Facebook Ads (pixel di Facebook) &egrave; un servizio di statistiche fornito da Facebook, Inc. che collega i dati provenienti dal network di annunci Facebook con le azioni compiute all'interno di questa Applicazione. Il pixel di Facebook monitora le conversioni che possono essere attribuite alle inserzioni di Facebook, Instagram e Audience Network. Dati Personali raccolti: Cookie; Dati di utilizzo. Luogo del trattamento: Stati Uniti &ndash;
-                        <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Monitoraggio conversioni di Google Ads (Google Ireland Limited)</h4>
-                        Il monitoraggio conversioni di Google Ads &egrave; un servizio di statistiche fornito da Google Ireland Limited che collega i dati provenienti dal network di annunci Google Ads con le azioni compiute all'interno di questa Applicazione. Dati Personali raccolti: Cookie; Dati di utilizzo. Luogo del trattamento: Irlanda &ndash;
-                        <a href="https://policies.google.com/privacy">Privacy Policy</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Monitoraggio conversioni di LinkedIn (LinkedIn Corporation)</h4>
-                        Il monitoraggio conversioni di LinkedIn &egrave; un servizio di statistiche fornito da LinkedIn Corporation che collega i dati provenienti dal network di annunci LinkedIn con le azioni compiute all'interno di questa Applicazione. Dati Personali raccolti: Cookie; Dati di utilizzo. Luogo del trattamento: Stati Uniti &ndash; <a href="https://www.linkedin.com/legal/privacy-policy">Privacy Policy</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Visualizzazione di contenuti da piattaforme esterne</h4>
-                        Questo tipo di servizi permette di visualizzare contenuti ospitati su piattaforme esterne direttamente dalle pagine di questa Applicazione e di interagire con essi. Nel caso in cui sia installato un servizio di questo tipo, &egrave; possibile che, anche nel caso gli Utenti non utilizzino il servizio, lo stesso raccolga dati di traffico relativi alle pagine in cui &egrave; installato.
-                        <h4>Google Fonts (Google Inc.)</h4>
-                        Google Fonts &egrave; un servizio di visualizzazione di stili di carattere gestito da Google Inc. che permette a questa Applicazione di integrare tali contenuti all&rsquo;interno delle proprie pagine. Dati Personali raccolti: Dati di utilizzo; varie tipologie di Dati secondo quanto specificato dalla privacy policy del servizio. Luogo del trattamento: Stati Uniti &ndash;
-                        <a href="https://www.google.com/intl/policies/privacy/">Privacy Policy</a>. Soggetto aderente al Privacy Shield.
-                        <h4>Font Awesome (Fonticons, Inc. )</h4>
-                        Font Awesome &egrave; un servizio di visualizzazione di stili di carattere gestito da Fonticons, Inc. che permette a questa Applicazione di integrare tali contenuti all&rsquo;interno delle proprie pagine. Dati Personali raccolti: Dati di utilizzo. Luogo del trattamento: Stati Uniti &ndash;
-                        <a href="https://fontawesome.com/privacy">Privacy Policy</a>.
-                        <h3>Ulteriori informazioni sui Dati Personali</h3>
-                        <h4>Vendita di beni e servizi online</h4>
-                        I Dati Personali raccolti sono utilizzati per l&rsquo;erogazione di servizi all&rsquo;Utente o per la vendita di prodotti, inclusi il pagamento e l&rsquo;eventuale consegna. I Dati Personali raccolti per perfezionare il pagamento possono essere quelli relativi alla carta di credito, al conto corrente utilizzato per il bonifico o ad altri strumenti di pagamento previsti. I Dati di pagamento raccolti da questa Applicazione dipendono dal sistema di pagamento utilizzato.
-                        <h4>Analisi dei Dati dell&rsquo;Utente e previsioni (&ldquo;profilazione&rdquo;)</h4>
-                        Il Titolare potrebbe trattare i dati d&rsquo;utilizzo raccolti attraverso questa Applicazione per creare o aggiornare profili di utenza. Questo tipo di trattamento consente al Titolare di valutare scelte, preferenze e comportamento dell&rsquo;Utente per gli scopi specificati nelle rispettive sezioni di questo documento. I profili d&rsquo;utenza possono essere creati anche grazie a strumenti automatizzati, come algoritmi, che possono anche essere offerti da terze parti. Per ottenere ulteriori informazioni
-                        sull&rsquo;attivit&agrave; di profilazione l&rsquo;Utente pu&ograve; fare riferimento alle rispettive sezioni di questo documento. L&rsquo;Utente ha in ogni momento diritto ad opporsi a tale attivit&agrave; di profilazione. Per scoprire di pi&ugrave; sui diritti dell&rsquo;Utente e su come esercitarli, l&rsquo;Utente pu&ograve; fare riferimento alla sezione di questo documento relativa ai diritti degli Utenti.
-                        <h4>Dati Personali raccolti attraverso fonti diverse dall'Utente</h4>
-                        Il Titolare di questa Applicazione potrebbe aver legittimamente raccolto Dati Personali relativi all&rsquo;Utente senza il suo coinvolgimento, attingendo a fonti fornite da terze parti, in conformit&agrave; con le basi giuridiche descritte nella sezione relativa alle basi giuridiche del trattamento. Qualora il Titolare avesse raccolto Dati Personali in tal modo, l&rsquo;Utente potr&agrave; trovare informazioni specifiche riguardo alle fonti nelle rispettive sezioni di questo documento o contattando il Titolare.
-                        <h4>Dati Personali necessari per l'iscrizione di un Minore alle attivit&agrave; pubblicizzate tramite questa Applicazione</h4>
-                        I Dati Personali raccolti sono utilizzati per l&rsquo;erogazione di servizi all&rsquo;Utente o al Minore iscritto alle attivit&agrave; pubblicizzate tramite questa applicazione. Per il Minore iscritto alle attivit&agrave; i dati raccolti includono: nome, cognome, luogo di nascita, data di nascita, codice fiscale, indirizzo di residenza, sesso, informazioni generiche utili all'erogazione delle attivit&agrave;. Per l'Utente, che deve essere genitore o tutore legale del Minore, i dati raccolti includono: nome, cognome, numero di
-                        telefono, indirizzo di residenza, luogo di nascita.
-                        <h4>Diritti dell&rsquo;Utente</h4>
-                        Gli Utenti possono esercitare determinati diritti con riferimento ai Dati trattati dal Titolare. In particolare, l&rsquo;Utente ha il diritto di:
-                        <ul>
-                        <li>revocare il consenso in ogni momento. L&rsquo;Utente pu&ograve; revocare il consenso al trattamento dei propri Dati Personali precedentemente espresso.</li>
-                        <li>opporsi al trattamento dei propri Dati. L&rsquo;Utente pu&ograve; opporsi al trattamento dei propri Dati quando esso avviene su una base giuridica diversa dal consenso. Ulteriori dettagli sul diritto di opposizione sono indicati nella sezione sottostante.</li>
-                        <li>accedere ai propri Dati. L&rsquo;Utente ha diritto ad ottenere informazioni sui Dati trattati dal Titolare, su determinati aspetti del trattamento ed a ricevere una copia dei Dati trattati.</li>
-                        <li>verificare e chiedere la rettificazione. L&rsquo;Utente pu&ograve; verificare la correttezza dei propri Dati e richiederne l&rsquo;aggiornamento o la correzione.</li>
-                        <li>ottenere la limitazione del trattamento. Quando ricorrono determinate condizioni, l&rsquo;Utente pu&ograve; richiedere la limitazione del trattamento dei propri Dati. In tal caso il Titolare non tratter&agrave; i Dati per alcun altro scopo se non la loro conservazione.</li>
-                        <li>ottenere la cancellazione o rimozione dei propri Dati Personali. Quando ricorrono determinate condizioni, l&rsquo;Utente pu&ograve; richiedere la cancellazione dei propri Dati da parte del Titolare.</li>
-                        <li>ricevere i propri Dati o farli trasferire ad altro titolare. L&rsquo;Utente ha diritto di ricevere i propri Dati in formato strutturato, di uso comune e leggibile da dispositivo automatico e, ove tecnicamente fattibile, di ottenerne il trasferimento senza ostacoli ad un altro titolare. Questa disposizione &egrave; applicabile quando i Dati sono trattati con strumenti automatizzati ed il trattamento &egrave; basato sul consenso dell&rsquo;Utente, su un contratto di cui l&rsquo;Utente &egrave; parte o su misure contrattuali ad esso
-                        connesse.</li>
-                        <li>proporre reclamo. L&rsquo;Utente pu&ograve; proporre un reclamo all&rsquo;autorit&agrave; di controllo della protezione dei dati personali competente o agire in sede giudiziale.</li>
-                        </ul>
-                        <h4>Dettagli sul diritto di opposizione</h4>
-                        Quando i Dati Personali sono trattati nell&rsquo;interesse pubblico, nell&rsquo;esercizio di pubblici poteri di cui &egrave; investito il Titolare oppure per perseguire un interesse legittimo del Titolare, gli Utenti hanno diritto ad opporsi al trattamento per motivi connessi alla loro situazione particolare. Si fa presente agli Utenti che, ove i loro Dati fossero trattati con finalit&agrave; di marketing diretto, possono opporsi al trattamento senza fornire alcuna motivazione. Per scoprire se il Titolare tratti dati con
-                        finalit&agrave; di marketing diretto gli Utenti possono fare riferimento alle rispettive sezioni di questo documento.
-                        <h4>Come esercitare i diritti</h4>
-                        Per esercitare i diritti dell&rsquo;Utente, gli Utenti possono indirizzare una richiesta agli estremi di contatto del Titolare indicati in questo documento. Le richieste sono depositate a titolo gratuito e evase dal Titolare nel pi&ugrave; breve tempo possibile, in ogni caso entro un mese.
-                        <h4>Cookie Policy</h4>
-                        Questa Applicazione fa utilizzo di Cookie. Per saperne di pi&ugrave; e per prendere visione dell&rsquo;informativa dettagliata, l&rsquo;Utente pu&ograve; consultare la
-                        <a href="https://www.iubenda.com/privacy-policy/31963848/cookie-policy">Cookie Policy</a>.
-                        <h3>Ulteriori informazioni sul trattamento</h3>
-                        <h4>Difesa in giudizio</h4>
-                        I Dati Personali dell&rsquo;Utente possono essere utilizzati da parte del Titolare in giudizio o nelle fasi preparatorie alla sua eventuale instaurazione per la difesa da abusi nell'utilizzo di questa Applicazione o dei Servizi connessi da parte dell&rsquo;Utente. L&rsquo;Utente dichiara di essere consapevole che il Titolare potrebbe essere obbligato a rivelare i Dati per ordine delle autorit&agrave; pubbliche.
-                        <h4>Informative specifiche</h4>
-                        Su richiesta dell&rsquo;Utente, in aggiunta alle informazioni contenute in questa privacy policy, questa Applicazione potrebbe fornire all'Utente delle informative aggiuntive e contestuali riguardanti Servizi specifici, o la raccolta ed il trattamento di Dati Personali.
-                        <h4>Log di sistema e manutenzione</h4>
-                        Per necessit&agrave; legate al funzionamento ed alla manutenzione, questa Applicazione e gli eventuali servizi terzi da essa utilizzati potrebbero raccogliere log di sistema, ossia file che registrano le interazioni e che possono contenere anche Dati Personali, quali l&rsquo;indirizzo IP Utente.
-                        <h4>Informazioni non contenute in questa policy</h4>
-                        Ulteriori informazioni in relazione al trattamento dei Dati Personali potranno essere richieste in qualsiasi momento al Titolare del Trattamento utilizzando gli estremi di contatto.
-                        <h4>Risposta alle richieste &ldquo;Do Not Track&rdquo;</h4>
-                        Questa Applicazione non supporta le richieste &ldquo;Do Not Track&rdquo;. Per scoprire se gli eventuali servizi di terze parti utilizzati le supportino, l'Utente &egrave; invitato a consultare le rispettive privacy policy.
-                        <h4>Modifiche a questa privacy policy</h4>
-                        Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla presente privacy policy in qualunque momento dandone informazione agli Utenti su questa pagina e, se possibile, su questa Applicazione nonch&eacute;, qualora tecnicamente e legalmente fattibile, inviando una notifica agli Utenti attraverso uno degli estremi di contatto di cui &egrave; in possesso il Titolare . Si prega dunque di consultare regolarmente questa pagina, facendo riferimento alla data di ultima modifica indicata in
-                        fondo. Qualora le modifiche interessino trattamenti la cui base giuridica &egrave; il consenso, il Titolare provveder&agrave; a raccogliere nuovamente il consenso dell&rsquo;Utente, se necessario.
-                        <h3>Definizioni e riferimenti legali</h3>
-                        <h4>Dati Personali (o Dati)</h4>
-                        Costituisce dato personale qualunque informazione che, direttamente o indirettamente, anche in collegamento con qualsiasi altra informazione, ivi compreso un numero di identificazione personale, renda identificata o identificabile una persona fisica.
-                        <h4>Dati di Utilizzo</h4>
-                        Sono le informazioni raccolte automaticamente attraverso questa Applicazione (anche da applicazioni di parti terze integrate in questa Applicazione), tra cui: gli indirizzi IP o i nomi a dominio dei computer utilizzati dall&rsquo;Utente che si connette con questa Applicazione, gli indirizzi in notazione URI (Uniform Resource Identifier), l&rsquo;orario della richiesta, il metodo utilizzato nell&rsquo;inoltrare la richiesta al server, la dimensione del file ottenuto in risposta, il codice numerico indicante lo
-                        stato della risposta dal server (buon fine, errore, ecc.) il paese di provenienza, le caratteristiche del browser e del sistema operativo utilizzati dal visitatore, le varie connotazioni temporali della visita (ad esempio il tempo di permanenza su ciascuna pagina) e i dettagli relativi all&rsquo;itinerario seguito all&rsquo;interno dell&rsquo;Applicazione, con particolare riferimento alla sequenza delle pagine consultate, ai parametri relativi al sistema operativo e all&rsquo;ambiente informatico dell&rsquo;Utente.
-                        <h4>Utente</h4>
-                        L'individuo che utilizza questa Applicazione che, salvo ove diversamente specificato, coincide con l'Interessato.
-                        <h4>Interessato</h4>
-                        La persona fisica cui si riferiscono i Dati Personali.
-                        <h4>Responsabile del Trattamento (o Responsabile)</h4>
-                        La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente che tratta dati personali per conto del Titolare, secondo quanto esposto nella presente privacy policy.
-                        <h4>Titolare del Trattamento (o Titolare)</h4>
-                        La persona fisica o giuridica, l'autorit&agrave; pubblica, il servizio o altro organismo che, singolarmente o insieme ad altri, determina le finalit&agrave; e i mezzi del trattamento di dati personali e gli strumenti adottati, ivi comprese le misure di sicurezza relative al funzionamento ed alla fruizione di questa Applicazione. Il Titolare del Trattamento, salvo quanto diversamente specificato, &egrave; il titolare di questa Applicazione.
-                        <h4>Questa Applicazione</h4>
-                        Lo strumento hardware o software mediante il quale sono raccolti e trattati i Dati Personali degli Utenti.
-                        <h4>Servizio</h4>
-                        Il Servizio fornito da questa Applicazione cos&igrave; come definito nei relativi termini (se presenti) su questo sito/applicazione.
-                        <h4>Unione Europea (o UE)</h4>
-                        Salvo ove diversamente specificato, ogni riferimento all&rsquo;Unione Europea contenuto in questo documento si intende esteso a tutti gli attuali stati membri dell&rsquo;Unione Europea e dello Spazio Economico Europeo.
-                        <h4>Cookie</h4>
-                        Piccola porzione di dati conservata all'interno del dispositivo dell'Utente.
-                        <h4>Riferimenti legali</h4>
-                        La presente informativa privacy &egrave; redatta sulla base di molteplici ordinamenti legislativi, inclusi gli artt. 13 e 14 del Regolamento (UE) 2016/679. Ove non diversamente specificato, questa informativa privacy riguarda esclusivamente questa Applicazione. Ultima modifica: 12 aprile 2019
+            <div class="modal fade m-0 p-0" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centeredOLD" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="position: absolute; top: 0; right:0; z-index: 2000">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    <svg class="bi" width="32" height="32">
+                                        <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#x" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body p-4 p-md-5">
+                            <h4>Titolare del Trattamento dei Dati</h4>
+                            <h5>Metamorfosi S.r.l. - via dell'Industria 9/A 57016 Indirizzo email del Titolare:
+                                info@Metamorfosi.it</h5>
+                            <h4>Tipologie di Dati raccolti</h4>
+                            Fra i Dati Personali raccolti da questa Applicazione, in modo autonomo o tramite terze
+                            parti, ci sono: email; nome; cognome; Dati di utilizzo; Cookie; Dati comunicati durante
+                            l'utilizzo del servizio; numero di telefono; varie tipologie di Dati; password. Dettagli
+                            completi su ciascuna tipologia di dati raccolti sono forniti nelle sezioni dedicate di
+                            questa privacy policy o mediante specifici testi informativi visualizzati prima della
+                            raccolta dei dati stessi. I Dati Personali possono essere
+                            liberamente forniti dall'Utente o, nel caso di Dati di Utilizzo, raccolti automaticamente
+                            durante l'uso di questa Applicazione. Se non diversamente specificato, tutti i Dati
+                            richiesti da questa Applicazione sono obbligatori. Se l&rsquo;Utente rifiuta di comunicarli,
+                            potrebbe essere impossibile per questa Applicazione fornire il Servizio. Nei casi in cui
+                            questa Applicazione indichi alcuni Dati come facoltativi, gli Utenti sono liberi di
+                            astenersi dal comunicare tali Dati, senza che ci&ograve; abbia alcuna
+                            conseguenza sulla disponibilit&agrave; del Servizio o sulla sua operativit&agrave;. Gli
+                            Utenti che dovessero avere dubbi su quali Dati siano obbligatori, sono incoraggiati a
+                            contattare il Titolare. L&rsquo;eventuale utilizzo di Cookie - o di altri strumenti di
+                            tracciamento - da parte di questa Applicazione o dei titolari dei servizi terzi utilizzati
+                            da questa Applicazione, ove non diversamente precisato, ha la finalit&agrave; di fornire il
+                            Servizio richiesto dall'Utente, oltre alle ulteriori finalit&agrave; descritte nel
+                            presente documento e nella Cookie Policy, se disponibile. L'Utente si assume la
+                            responsabilit&agrave; dei Dati Personali di terzi ottenuti, pubblicati o condivisi mediante
+                            questa Applicazione e garantisce di avere il diritto di comunicarli o diffonderli, liberando
+                            il Titolare da qualsiasi responsabilit&agrave; verso terzi.
+                            <h3>Modalit&agrave; e luogo del trattamento dei Dati raccolti</h3>
+                            <h4>Modalit&agrave; di trattamento</h4>
+                            Il Titolare adotta le opportune misure di sicurezza volte ad impedire l&rsquo;accesso, la
+                            divulgazione, la modifica o la distruzione non autorizzate dei Dati Personali. Il
+                            trattamento viene effettuato mediante strumenti informatici e/o telematici, con
+                            modalit&agrave; organizzative e con logiche strettamente correlate alle finalit&agrave;
+                            indicate. Oltre al Titolare, in alcuni casi, potrebbero avere accesso ai Dati altri soggetti
+                            coinvolti nell&rsquo;organizzazione di questa Applicazione (personale amministrativo,
+
+                            commerciale, marketing, legali, amministratori di sistema) ovvero soggetti esterni (come
+                            fornitori di servizi tecnici terzi, corrieri postali, hosting provider, societ&agrave;
+                            informatiche, agenzie di comunicazione) nominati anche, se necessario, Responsabili del
+                            Trattamento da parte del Titolare. L&rsquo;elenco aggiornato dei Responsabili potr&agrave;
+                            sempre essere richiesto al Titolare del Trattamento.
+                            <h4>Base giuridica del trattamento</h4>
+                            Il Titolare tratta Dati Personali relativi all&rsquo;Utente in caso sussista una delle
+                            seguenti condizioni:
+                            <ul>
+                                <li>l&rsquo;Utente ha prestato il consenso per una o pi&ugrave; finalit&agrave;
+                                    specifiche; Nota: in alcuni ordinamenti il Titolare pu&ograve; essere autorizzato a
+                                    trattare Dati Personali senza che debba sussistere il consenso dell&rsquo;Utente o
+                                    un&rsquo;altra delle basi giuridiche specificate di seguito, fino a quando
+                                    l&rsquo;Utente non si opponga (&ldquo;opt-out&rdquo;) a tale trattamento. Ci&ograve;
+                                    non &egrave; tuttavia applicabile qualora il trattamento di Dati Personali sia
+                                    regolato dalla legislazione europea in materia di protezione dei Dati Personali;
+                                </li>
+                                <li>il trattamento &egrave; necessario all'esecuzione di un contratto con l&rsquo;Utente
+                                    e/o all'esecuzione di misure precontrattuali;</li>
+                                <li>il trattamento &egrave; necessario per adempiere un obbligo legale al quale &egrave;
+                                    soggetto il Titolare;</li>
+                                <li>il trattamento &egrave; necessario per l'esecuzione di un compito di interesse
+                                    pubblico o per l'esercizio di pubblici poteri di cui &egrave; investito il Titolare;
+                                </li>
+                                <li>il trattamento &egrave; necessario per il perseguimento del legittimo interesse del
+                                    Titolare o di terzi.</li>
+                            </ul>
+                            &Egrave; comunque sempre possibile richiedere al Titolare di chiarire la concreta base
+                            giuridica di ciascun trattamento ed in particolare di specificare se il trattamento sia
+                            basato sulla legge, previsto da un contratto o necessario per concludere un contratto.
+                            <h4>Luogo</h4>
+                            I Dati sono trattati presso le sedi operative del Titolare ed in ogni altro luogo in cui le
+                            parti coinvolte nel trattamento siano localizzate. Per ulteriori informazioni, contatta il
+                            Titolare. I Dati Personali dell&rsquo;Utente potrebbero essere trasferiti in un paese
+                            diverso da quello in cui l&rsquo;Utente si trova. Per ottenere ulteriori informazioni sul
+                            luogo del trattamento l&rsquo;Utente pu&ograve; fare riferimento alla sezione relativa ai
+                            dettagli sul trattamento dei Dati Personali. L&rsquo;Utente ha diritto a ottenere
+                            informazioni in merito alla base giuridica del trasferimento di Dati al di fuori
+                            dell&rsquo;Unione Europea o ad un&rsquo;organizzazione internazionale di diritto
+                            internazionale pubblico o costituita da due o pi&ugrave; paesi, come ad esempio l&rsquo;ONU,
+                            nonch&eacute; in merito alle misure di sicurezza adottate dal Titolare per proteggere i
+                            Dati. L&rsquo;Utente pu&ograve; verificare se abbia luogo uno dei trasferimenti appena
+                            descritti esaminando la sezione di questo documento relativa ai dettagli sul trattamento di
+                            Dati Personali o
+                            chiedere informazioni al Titolare contattandolo agli estremi riportati in apertura.
+                            <h4>Periodo di conservazione</h4>
+                            I Dati sono trattati e conservati per il tempo richiesto dalle finalit&agrave; per le quali
+                            sono stati raccolti. Pertanto:
+                            <ul>
+                                <li>I Dati Personali raccolti per scopi collegati all&rsquo;esecuzione di un contratto
+                                    tra il Titolare e l&rsquo;Utente saranno trattenuti sino a quando sia completata
+                                    l&rsquo;esecuzione di tale contratto.</li>
+                                <li>I Dati Personali raccolti per finalit&agrave; riconducibili all&rsquo;interesse
+                                    legittimo del Titolare saranno trattenuti sino al soddisfacimento di tale interesse.
+                                    L&rsquo;Utente pu&ograve; ottenere ulteriori informazioni in merito
+                                    all&rsquo;interesse legittimo perseguito dal Titolare nelle relative sezioni di
+                                    questo documento o contattando il Titolare.</li>
+                            </ul>
+                            Quando il trattamento &egrave; basato sul consenso dell&rsquo;Utente, il Titolare pu&ograve;
+                            conservare i Dati Personali pi&ugrave; a lungo sino a quando detto consenso non venga
+                            revocato. Inoltre, il Titolare potrebbe essere obbligato a conservare i Dati Personali per
+                            un periodo pi&ugrave; lungo in ottemperanza ad un obbligo di legge o per ordine di
+                            un&rsquo;autorit&agrave;. Al termine del periodo di conservazione i Dati Personali saranno
+                            cancellati. Pertanto, allo spirare di tale termine il diritto di accesso, cancellazione,
+                            rettificazione
+                            ed il diritto alla portabilit&agrave; dei Dati non potranno pi&ugrave; essere esercitati.
+                            <h4>Finalit&agrave; del Trattamento dei Dati raccolti</h4>
+                            I Dati dell&rsquo;Utente sono raccolti per consentire al Titolare di fornire i propri
+                            Servizi, cos&igrave; come per le seguenti finalit&agrave;: Contattare l'Utente, Gestione
+                            contatti e invio di messaggi, Visualizzazione di contenuti da piattaforme esterne,
+                            Interazione con le piattaforme di live chat, Statistica, Hosting ed infrastruttura backend,
+                            Gestione dei database di Utenti, Remarketing e behavioral targeting, Pubblicit&agrave;,
+                            Registrazione ed autenticazione, Gestione dei pagamenti e Gestione dei tag. Per ottenere
+                            ulteriori informazioni dettagliate sulle finalit&agrave; del trattamento e sui Dati
+                            Personali concretamente rilevanti per ciascuna finalit&agrave;, l&rsquo;Utente pu&ograve;
+                            fare riferimento alle relative sezioni di questo documento.
+                            <h4>Dettagli sul trattamento dei Dati Personali</h4>
+                            I Dati Personali sono raccolti per le seguenti finalit&agrave; ed utilizzando i seguenti
+                            servizi:
+                            <h3>Contattare l'Utente</h3>
+                            <h4>Mailing list o newsletter (questa Applicazione)</h4>
+                            Con la registrazione alla mailing list o alla newsletter, l&rsquo;indirizzo email
+                            dell&rsquo;Utente viene automaticamente inserito in una lista di contatti a cui potranno
+                            essere trasmessi messaggi email contenenti informazioni, anche di natura commerciale e
+                            promozionale, relative a questa Applicazione. L'indirizzo email dell'Utente potrebbe anche
+                            essere aggiunto a questa lista come risultato della registrazione a questa Applicazione o
+                            dopo aver effettuato un acquisto. Dati Personali raccolti: cognome;
+                            email; nome.
+                            <h4>Modulo di contatto (questa Applicazione)</h4>
+                            L&rsquo;Utente, compilando con i propri Dati il modulo di contatto, acconsente al loro
+                            utilizzo per rispondere alle richieste di informazioni, di preventivo, o di qualunque altra
+                            natura indicata dall&rsquo;intestazione del modulo. Dati Personali raccolti: email; nome.
+                            <h4>Gestione contatti e invio di messaggi</h4>
+                            Questo tipo di servizi consente di gestire un database di contatti email, contatti
+                            telefonici o contatti di qualunque altro tipo, utilizzati per comunicare con l&rsquo;Utente.
+                            Questi servizi potrebbero inoltre consentire di raccogliere dati relativi alla data e
+                            all&rsquo;ora di visualizzazione dei messaggi da parte dell&rsquo;Utente, cos&igrave; come
+                            all&rsquo;interazione dell'Utente con essi, come le informazioni sui click sui collegamenti
+                            inseriti nei messaggi.
+                            <h4>Mailchimp (The Rocket Science Group, LLC.)</h4>
+                            Mailchimp &egrave; un servizio di gestione indirizzi e invio di messaggi email fornito da
+                            The Rocket Science Group, LLC. Dati Personali raccolti: cognome; email; nome. Luogo del
+                            trattamento: Stati Uniti &ndash;
+                            <a href="https://mailchimp.com/legal/privacy/">Privacy Policy</a>. Soggetto aderente al
+                            Privacy Shield.
+                            <h4>Postmark (Wildbit LLC)</h4>
+                            Postmark &egrave; un servizio di gestione indirizzi e invio di messaggi email fornito da
+                            Wildbit LLC. Dati Personali raccolti: cognome; email; nome; varie tipologie di Dati. Luogo
+                            del trattamento: Stati Uniti &ndash;
+                            <a href="https://wildbit.com/privacy-policy">Privacy Policy</a>.
+                            <h4>Gestione dei database di Utenti</h4>
+                            Questo tipo di servizi permettono al Titolare di costruire profili utente partendo da un
+                            indirizzo email, il nome o qualunque altra informazione che l'Utente fornisce a questa
+                            Applicazione, cos&igrave; come di tracciare le attivit&agrave; dell'Utente tramite
+                            funzionalit&agrave; statistiche. Questi Dati Personali potrebbero inoltre venire incrociati
+                            con informazioni sull'Utente disponibili pubblicamente (come i profili sui social network)
+                            ed usati per costruire profili privati che il Titolare pu&ograve; visualizzare ed
+                            utilizzare per migliorare questa Applicazione. Alcuni di questi servizi potrebbero inoltre
+                            permettere l'invio programmato di messaggi all'Utente, come email basate su azioni
+                            specifiche compiute su questa Applicazione.
+                            <h4>HubSpot CRM (HubSpot, Inc.)</h4>
+                            HubSpot CRM &egrave; un servizio di gestione dei database di Utenti fornito da HubSpot, Inc.
+                            Dati Personali raccolti: email; numero di telefono; varie tipologie di Dati secondo quanto
+                            specificato dalla privacy policy del servizio. Luogo del trattamento: Stati Uniti &ndash;
+                            <a href="https://legal.hubspot.com/privacy-policy">Privacy Policy</a>. Soggetto aderente al
+                            Privacy Shield.
+                            <h4>Gestione dei pagamenti</h4>
+                            I servizi di gestione dei pagamenti permettono a questa Applicazione di processare pagamenti
+                            tramite carta di credito, bonifico bancario o altri strumenti. I dati utilizzati per il
+                            pagamento vengono acquisiti direttamente dal gestore del servizio di pagamento richiesto
+                            senza essere in alcun modo trattati da questa Applicazione. Alcuni di questi servizi
+                            potrebbero inoltre permettere l'invio programmato di messaggi all'Utente, come email
+                            contenenti fatture o notifiche riguardanti il pagamento.
+                            <h4>Stripe (Stripe Inc)</h4>
+                            Stripe &egrave; un servizio di pagamento fornito da Stripe Inc. Dati Personali raccolti:
+                            varie tipologie di Dati secondo quanto specificato dalla privacy policy del servizio. Luogo
+                            del trattamento: Stati Uniti &ndash;
+                            <a href="https://stripe.com/us/privacy">Privacy Policy</a>. Soggetto aderente al Privacy
+                            Shield.
+                            <h4>Gestione dei tag</h4>
+                            Questo tipo di servizi &egrave; funzionale alla gestione centralizzata dei tag o script
+                            utilizzati su questa Applicazione. L'uso di tali servizi comporta il fluire dei Dati
+                            dell'Utente attraverso gli stessi e, se del caso, la loro ritenzione.
+                            <h4>Google Tag Manager (Google Ireland Limited)</h4>
+                            Google Tag Manager &egrave; un servizio di gestione dei tag fornito da Google Ireland
+                            Limited. Dati Personali raccolti: Cookie; Dati di utilizzo. Luogo del trattamento: Irlanda
+                            &ndash;
+                            <a href="https://policies.google.com/privacy">Privacy Policy</a>. Soggetto aderente al
+                            Privacy Shield.
+                            <h4>Hosting ed infrastruttura backend</h4>
+                            Questo tipo di servizi ha la funzione di ospitare Dati e file che permettono a questa
+                            Applicazione di funzionare, ne consentono la distribuzione e mettono a disposizione
+                            un'infrastruttura pronta all'uso per erogare specifiche funzionalit&agrave; di questa
+                            Applicazione. Alcuni servizi tra quelli elencati di seguito, se presenti, possono funzionare
+                            su server geograficamente distribuiti, rendendo difficile determinare l'effettiva ubicazione
+                            in cui sono conservati i Dati Personali.
+                            <h4>Heroku (Salesforce.com, inc.)</h4>
+                            Heroku &egrave; un servizio di hosting fornito da Salesforce.com, inc. Dati Personali
+                            raccolti: varie tipologie di Dati secondo quanto specificato dalla privacy policy del
+                            servizio. Luogo del trattamento: Stati Uniti &ndash;
+                            <a href="https://www.salesforce.com/company/privacy/full_privacy.jsp">Privacy Policy</a>.
+                            <h4>Interazione con le piattaforme di live chat</h4>
+                            Questo tipo di servizi permette di interagire con le piattaforme di live chat, gestite da
+                            soggetti terzi, direttamente dalle pagine di questa Applicazione. Ci&ograve; permette
+                            all'Utente di contattare il servizio di supporto di questa Applicazione o a questa
+                            Applicazione di contattare l'Utente mentre sta navigando le sue pagine. Nel caso in cui sia
+                            installato un servizio di interazione con le piattaforme di live chat, &egrave; possibile
+                            che, anche nel caso gli Utenti non utilizzino il servizio, lo stesso
+                            raccolga Dati di Utilizzo relativi alle pagine in cui &egrave; installato. Inoltre, le
+                            conversazioni della live chat potrebbero essere registrate.
+                            <h4>Facebook Messenger Customer Chat (Facebook, Inc.)</h4>
+                            Il Facebook Messenger Customer Chat &egrave; un servizio di interazione con la piattaforma
+                            di live chat Facebook Messenger, fornito da Facebook, Inc. Dati Personali raccolti: Cookie;
+                            Dati comunicati durante l'utilizzo del servizio; Dati di utilizzo. Luogo del trattamento:
+                            Stati Uniti &ndash;
+                            <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a>. Soggetto aderente al
+                            Privacy Shield.
+                            <h4>Pubblicit&agrave;</h4>
+                            Questo tipo di servizi consentono di utilizzare i Dati dell&rsquo;Utente per finalit&agrave;
+                            di comunicazione commerciale in diverse forme pubblicitarie, quali il banner, anche in
+                            relazione agli interessi dell&rsquo;Utente. Ci&ograve; non significa che tutti i Dati
+                            Personali vengano utilizzati per questa finalit&agrave;. Dati e condizioni di utilizzo sono
+                            indicati di seguito. Alcuni dei servizi di seguito indicati potrebbero utilizzare Cookie per
+                            identificare l&rsquo;Utente o utilizzare la tecnica del behavioral retargeting, ossia
+                            visualizzare annunci pubblicitari personalizzati in base agli interessi e al comportamento
+                            dell&rsquo;Utente, rilevati anche al di fuori di questa Applicazione. Per avere maggiori
+                            informazioni in merito, ti suggeriamo di verificare le informative privacy dei rispettivi
+                            servizi. In aggiunta alle possibilit&agrave; di effettuare l'opt-out offerte dai servizi di
+                            seguito riportati, l'Utente pu&ograve; optare per l'esclusione dell&rsquo;uso di cookie da
+                            parte di un servizio di terzi per alcune funzionalit&agrave; pubblicitarie
+                            visitando la
+                            <a href="http://optout.networkadvertising.org/">pagina di opt-out della Network Advertising
+                                Initiative</a>. Gli Utenti possono anche scegliere di non partecipare a determinate
+                            funzionalit&agrave; pubblicitarie attraverso le corrispondenti opzioni di configurazione del
+                            dispositivo, come le opzioni di configurazione pubblicitaria del dispositivo mobile o la
+                            configurazione pubblicitaria generica.
+                            <h4>Pubblico simile di Facebook (Facebook, Inc.)</h4>
+                            Pubblico simile di Facebook &egrave; un servizio di advertising e di targeting
+                            comportamentale fornito da Facebook, Inc. che utilizza i Dati raccolti attraverso il
+                            servizio Pubblico personalizzato di Facebook al fine di mostrare annunci pubblicitari a
+                            Utenti con comportamenti simili a Utenti che sono gi&agrave; in una lista di Pubblico
+                            personalizzato sulla base del loro precedente utilizzo di questa Applicazione o della loro
+                            interazione con contenuti rilevanti attraverso le applicazioni e i servizi di
+                            Facebook. Sulla base di questi Dati, gli annunci personalizzati saranno mostrati agli Utenti
+                            suggeriti da Pubblico simile di Facebook. Gli Utenti possono scegliere di non utilizzare i
+                            cookie di Facebook per la personalizzazione degli annunci visitando questa
+                            <a href="https://www.aboutads.info/choices/">pagina di opt-out </a>. Dati Personali
+                            raccolti: Cookie; Dati di utilizzo. Luogo del trattamento: Stati Uniti &ndash; <a
+                                href="https://www.facebook.com/about/privacy/">Privacy Policy</a> &ndash; <a
+                                href="https://www.aboutads.info/choices/">Opt Out</a>. Soggetto aderente al Privacy
+                            Shield.
+                            <h4>Registrazione ed autenticazione</h4>
+                            Con la registrazione o l&rsquo;autenticazione l&rsquo;Utente consente all&rsquo;Applicazione
+                            di identificarlo e di dargli accesso a servizi dedicati. A seconda di quanto indicato di
+                            seguito, i servizi di registrazione e di autenticazione potrebbero essere forniti con
+                            l&rsquo;ausilio di terze parti. Qualora questo avvenga, questa applicazione potr&agrave;
+                            accedere ad alcuni Dati conservati dal servizio terzo usato per la registrazione o
+                            l&rsquo;identificazione.
+                            <h4>Registrazione diretta (questa Applicazione)</h4>
+                            L&rsquo;Utente si registra compilando il modulo di registrazione e fornendo direttamente a
+                            questa Applicazione i propri Dati Personali. Dati Personali raccolti: cognome; email; nome;
+                            password.
+                            <h4>Remarketing e behavioral targeting</h4>
+                            Questo tipo di servizi consente a questa Applicazione ed ai suoi partner di comunicare,
+                            ottimizzare e servire annunci pubblicitari basati sull'utilizzo passato di questa
+                            Applicazione da parte dell'Utente. Questa attivit&agrave; viene effettuata tramite il
+                            tracciamento dei Dati di Utilizzo e l'uso di Cookie, informazioni che vengono trasferite ai
+                            partner a cui l'attivit&agrave; di remarketing e behavioral targeting &egrave; collegata.
+                            Alcuni servizi offrono un'opzione di remarketing basata sulle liste di indirizzi
+                            email. In aggiunta alle possibilit&agrave; di effettuare l'opt-out offerte dai servizi di
+                            seguito riportati, l'Utente pu&ograve; optare per l'esclusione dell&rsquo;uso di cookie da
+                            parte di un servizio di terzi per alcune funzioni di remarketing visitando la
+                            <a href="http://optout.networkadvertising.org/">pagina di opt-out della Network Advertising
+                                Initiative</a>. Gli Utenti possono anche scegliere di non partecipare a determinate
+                            funzionalit&agrave; pubblicitarie attraverso le corrispondenti opzioni di configurazione del
+                            dispositivo, come le opzioni di configurazione pubblicitaria del dispositivo mobile o la
+                            configurazione pubblicitaria generica.
+                            <h4>Pubblico personalizzato di Facebook (Facebook, Inc.)</h4>
+                            Pubblico personalizzato di Facebook &egrave; un servizio di remarketing e di targeting
+                            comportamentale fornito da Facebook, Inc. che collega l'attivit&agrave; di questa
+                            Applicazione con la rete pubblicitaria di Facebook. Gli Utenti possono scegliere di non
+                            utilizzare i cookie di Facebook per la personalizzazione degli annunci visitando questa
+                            <a href="https://www.aboutads.info/choices/">pagina di opt-out</a>. Dati Personali raccolti:
+                            Cookie; email. Luogo del trattamento: Stati Uniti &ndash; <a
+                                href="https://www.facebook.com/about/privacy/">Privacy Policy</a> &ndash; <a
+                                href="https://www.aboutads.info/choices/">Opt Out</a>. Soggetto aderente al Privacy
+                            Shield.
+                            <h4>Statistica</h4>
+                            I servizi contenuti nella presente sezione permettono al Titolare del Trattamento di
+                            monitorare e analizzare i dati di traffico e servono a tener traccia del comportamento
+                            dell&rsquo;Utente.
+                            <h4>Google Analytics (Google Ireland Limited)</h4>
+                            Google Analytics &egrave; un servizio di analisi web fornito da Google Ireland Limited
+                            (&ldquo;Google&rdquo;). Google utilizza i Dati Personali raccolti allo scopo di tracciare ed
+                            esaminare l&rsquo;utilizzo di questa Applicazione, compilare report e condividerli con gli
+                            altri servizi sviluppati da Google. Google potrebbe utilizzare i Dati Personali per
+                            contestualizzare e personalizzare gli annunci del proprio network pubblicitario. Dati
+                            Personali raccolti: Cookie; Dati di utilizzo. Luogo del trattamento: Irlanda &ndash;
+                            <a href="https://policies.google.com/privacy">Privacy Policy</a> &ndash; <a
+                                href="https://tools.google.com/dlpage/gaoptout?hl=en">Opt Out</a>. Soggetto aderente al
+                            Privacy Shield.
+                            <h4>Monitoraggio conversioni di Facebook Ads (pixel di Facebook) (Facebook, Inc.)</h4>
+                            Il monitoraggio conversioni di Facebook Ads (pixel di Facebook) &egrave; un servizio di
+                            statistiche fornito da Facebook, Inc. che collega i dati provenienti dal network di annunci
+                            Facebook con le azioni compiute all'interno di questa Applicazione. Il pixel di Facebook
+                            monitora le conversioni che possono essere attribuite alle inserzioni di Facebook, Instagram
+                            e Audience Network. Dati Personali raccolti: Cookie; Dati di utilizzo. Luogo del
+                            trattamento: Stati Uniti &ndash;
+                            <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a>. Soggetto aderente al
+                            Privacy Shield.
+                            <h4>Monitoraggio conversioni di Google Ads (Google Ireland Limited)</h4>
+                            Il monitoraggio conversioni di Google Ads &egrave; un servizio di statistiche fornito da
+                            Google Ireland Limited che collega i dati provenienti dal network di annunci Google Ads con
+                            le azioni compiute all'interno di questa Applicazione. Dati Personali raccolti: Cookie; Dati
+                            di utilizzo. Luogo del trattamento: Irlanda &ndash;
+                            <a href="https://policies.google.com/privacy">Privacy Policy</a>. Soggetto aderente al
+                            Privacy Shield.
+                            <h4>Monitoraggio conversioni di LinkedIn (LinkedIn Corporation)</h4>
+                            Il monitoraggio conversioni di LinkedIn &egrave; un servizio di statistiche fornito da
+                            LinkedIn Corporation che collega i dati provenienti dal network di annunci LinkedIn con le
+                            azioni compiute all'interno di questa Applicazione. Dati Personali raccolti: Cookie; Dati di
+                            utilizzo. Luogo del trattamento: Stati Uniti &ndash; <a
+                                href="https://www.linkedin.com/legal/privacy-policy">Privacy Policy</a>. Soggetto
+                            aderente al Privacy Shield.
+                            <h4>Visualizzazione di contenuti da piattaforme esterne</h4>
+                            Questo tipo di servizi permette di visualizzare contenuti ospitati su piattaforme esterne
+                            direttamente dalle pagine di questa Applicazione e di interagire con essi. Nel caso in cui
+                            sia installato un servizio di questo tipo, &egrave; possibile che, anche nel caso gli Utenti
+                            non utilizzino il servizio, lo stesso raccolga dati di traffico relativi alle pagine in cui
+                            &egrave; installato.
+                            <h4>Google Fonts (Google Inc.)</h4>
+                            Google Fonts &egrave; un servizio di visualizzazione di stili di carattere gestito da Google
+                            Inc. che permette a questa Applicazione di integrare tali contenuti all&rsquo;interno delle
+                            proprie pagine. Dati Personali raccolti: Dati di utilizzo; varie tipologie di Dati secondo
+                            quanto specificato dalla privacy policy del servizio. Luogo del trattamento: Stati Uniti
+                            &ndash;
+                            <a href="https://www.google.com/intl/policies/privacy/">Privacy Policy</a>. Soggetto
+                            aderente al Privacy Shield.
+                            <h4>Font Awesome (Fonticons, Inc. )</h4>
+                            Font Awesome &egrave; un servizio di visualizzazione di stili di carattere gestito da
+                            Fonticons, Inc. che permette a questa Applicazione di integrare tali contenuti
+                            all&rsquo;interno delle proprie pagine. Dati Personali raccolti: Dati di utilizzo. Luogo del
+                            trattamento: Stati Uniti &ndash;
+                            <a href="https://fontawesome.com/privacy">Privacy Policy</a>.
+                            <h3>Ulteriori informazioni sui Dati Personali</h3>
+                            <h4>Vendita di beni e servizi online</h4>
+                            I Dati Personali raccolti sono utilizzati per l&rsquo;erogazione di servizi all&rsquo;Utente
+                            o per la vendita di prodotti, inclusi il pagamento e l&rsquo;eventuale consegna. I Dati
+                            Personali raccolti per perfezionare il pagamento possono essere quelli relativi alla carta
+                            di credito, al conto corrente utilizzato per il bonifico o ad altri strumenti di pagamento
+                            previsti. I Dati di pagamento raccolti da questa Applicazione dipendono dal sistema di
+                            pagamento utilizzato.
+                            <h4>Analisi dei Dati dell&rsquo;Utente e previsioni (&ldquo;profilazione&rdquo;)</h4>
+                            Il Titolare potrebbe trattare i dati d&rsquo;utilizzo raccolti attraverso questa
+                            Applicazione per creare o aggiornare profili di utenza. Questo tipo di trattamento consente
+                            al Titolare di valutare scelte, preferenze e comportamento dell&rsquo;Utente per gli scopi
+                            specificati nelle rispettive sezioni di questo documento. I profili d&rsquo;utenza possono
+                            essere creati anche grazie a strumenti automatizzati, come algoritmi, che possono anche
+                            essere offerti da terze parti. Per ottenere ulteriori informazioni
+                            sull&rsquo;attivit&agrave; di profilazione l&rsquo;Utente pu&ograve; fare riferimento alle
+                            rispettive sezioni di questo documento. L&rsquo;Utente ha in ogni momento diritto ad opporsi
+                            a tale attivit&agrave; di profilazione. Per scoprire di pi&ugrave; sui diritti
+                            dell&rsquo;Utente e su come esercitarli, l&rsquo;Utente pu&ograve; fare riferimento alla
+                            sezione di questo documento relativa ai diritti degli Utenti.
+                            <h4>Dati Personali raccolti attraverso fonti diverse dall'Utente</h4>
+                            Il Titolare di questa Applicazione potrebbe aver legittimamente raccolto Dati Personali
+                            relativi all&rsquo;Utente senza il suo coinvolgimento, attingendo a fonti fornite da terze
+                            parti, in conformit&agrave; con le basi giuridiche descritte nella sezione relativa alle
+                            basi giuridiche del trattamento. Qualora il Titolare avesse raccolto Dati Personali in tal
+                            modo, l&rsquo;Utente potr&agrave; trovare informazioni specifiche riguardo alle fonti nelle
+                            rispettive sezioni di questo documento o contattando il Titolare.
+                            <h4>Dati Personali necessari per l'iscrizione di un Minore alle attivit&agrave;
+                                pubblicizzate tramite questa Applicazione</h4>
+                            I Dati Personali raccolti sono utilizzati per l&rsquo;erogazione di servizi all&rsquo;Utente
+                            o al Minore iscritto alle attivit&agrave; pubblicizzate tramite questa applicazione. Per il
+                            Minore iscritto alle attivit&agrave; i dati raccolti includono: nome, cognome, luogo di
+                            nascita, data di nascita, codice fiscale, indirizzo di residenza, sesso, informazioni
+                            generiche utili all'erogazione delle attivit&agrave;. Per l'Utente, che deve essere genitore
+                            o tutore legale del Minore, i dati raccolti includono: nome, cognome, numero di
+                            telefono, indirizzo di residenza, luogo di nascita.
+                            <h4>Diritti dell&rsquo;Utente</h4>
+                            Gli Utenti possono esercitare determinati diritti con riferimento ai Dati trattati dal
+                            Titolare. In particolare, l&rsquo;Utente ha il diritto di:
+                            <ul>
+                                <li>revocare il consenso in ogni momento. L&rsquo;Utente pu&ograve; revocare il consenso
+                                    al trattamento dei propri Dati Personali precedentemente espresso.</li>
+                                <li>opporsi al trattamento dei propri Dati. L&rsquo;Utente pu&ograve; opporsi al
+                                    trattamento dei propri Dati quando esso avviene su una base giuridica diversa dal
+                                    consenso. Ulteriori dettagli sul diritto di opposizione sono indicati nella sezione
+                                    sottostante.</li>
+                                <li>accedere ai propri Dati. L&rsquo;Utente ha diritto ad ottenere informazioni sui Dati
+                                    trattati dal Titolare, su determinati aspetti del trattamento ed a ricevere una
+                                    copia dei Dati trattati.</li>
+                                <li>verificare e chiedere la rettificazione. L&rsquo;Utente pu&ograve; verificare la
+                                    correttezza dei propri Dati e richiederne l&rsquo;aggiornamento o la correzione.
+                                </li>
+                                <li>ottenere la limitazione del trattamento. Quando ricorrono determinate condizioni,
+                                    l&rsquo;Utente pu&ograve; richiedere la limitazione del trattamento dei propri Dati.
+                                    In tal caso il Titolare non tratter&agrave; i Dati per alcun altro scopo se non la
+                                    loro conservazione.</li>
+                                <li>ottenere la cancellazione o rimozione dei propri Dati Personali. Quando ricorrono
+                                    determinate condizioni, l&rsquo;Utente pu&ograve; richiedere la cancellazione dei
+                                    propri Dati da parte del Titolare.</li>
+                                <li>ricevere i propri Dati o farli trasferire ad altro titolare. L&rsquo;Utente ha
+                                    diritto di ricevere i propri Dati in formato strutturato, di uso comune e leggibile
+                                    da dispositivo automatico e, ove tecnicamente fattibile, di ottenerne il
+                                    trasferimento senza ostacoli ad un altro titolare. Questa disposizione &egrave;
+                                    applicabile quando i Dati sono trattati con strumenti automatizzati ed il
+                                    trattamento &egrave; basato sul consenso dell&rsquo;Utente, su un contratto di cui
+                                    l&rsquo;Utente &egrave; parte o su misure contrattuali ad esso
+                                    connesse.</li>
+                                <li>proporre reclamo. L&rsquo;Utente pu&ograve; proporre un reclamo
+                                    all&rsquo;autorit&agrave; di controllo della protezione dei dati personali
+                                    competente o agire in sede giudiziale.</li>
+                            </ul>
+                            <h4>Dettagli sul diritto di opposizione</h4>
+                            Quando i Dati Personali sono trattati nell&rsquo;interesse pubblico, nell&rsquo;esercizio di
+                            pubblici poteri di cui &egrave; investito il Titolare oppure per perseguire un interesse
+                            legittimo del Titolare, gli Utenti hanno diritto ad opporsi al trattamento per motivi
+                            connessi alla loro situazione particolare. Si fa presente agli Utenti che, ove i loro Dati
+                            fossero trattati con finalit&agrave; di marketing diretto, possono opporsi al trattamento
+                            senza fornire alcuna motivazione. Per scoprire se il Titolare tratti dati con
+                            finalit&agrave; di marketing diretto gli Utenti possono fare riferimento alle rispettive
+                            sezioni di questo documento.
+                            <h4>Come esercitare i diritti</h4>
+                            Per esercitare i diritti dell&rsquo;Utente, gli Utenti possono indirizzare una richiesta
+                            agli estremi di contatto del Titolare indicati in questo documento. Le richieste sono
+                            depositate a titolo gratuito e evase dal Titolare nel pi&ugrave; breve tempo possibile, in
+                            ogni caso entro un mese.
+                            <h4>Cookie Policy</h4>
+                            Questa Applicazione fa utilizzo di Cookie. Per saperne di pi&ugrave; e per prendere visione
+                            dell&rsquo;informativa dettagliata, l&rsquo;Utente pu&ograve; consultare la
+                            <a href="https://www.iubenda.com/privacy-policy/31963848/cookie-policy">Cookie Policy</a>.
+                            <h3>Ulteriori informazioni sul trattamento</h3>
+                            <h4>Difesa in giudizio</h4>
+                            I Dati Personali dell&rsquo;Utente possono essere utilizzati da parte del Titolare in
+                            giudizio o nelle fasi preparatorie alla sua eventuale instaurazione per la difesa da abusi
+                            nell'utilizzo di questa Applicazione o dei Servizi connessi da parte dell&rsquo;Utente.
+                            L&rsquo;Utente dichiara di essere consapevole che il Titolare potrebbe essere obbligato a
+                            rivelare i Dati per ordine delle autorit&agrave; pubbliche.
+                            <h4>Informative specifiche</h4>
+                            Su richiesta dell&rsquo;Utente, in aggiunta alle informazioni contenute in questa privacy
+                            policy, questa Applicazione potrebbe fornire all'Utente delle informative aggiuntive e
+                            contestuali riguardanti Servizi specifici, o la raccolta ed il trattamento di Dati
+                            Personali.
+                            <h4>Log di sistema e manutenzione</h4>
+                            Per necessit&agrave; legate al funzionamento ed alla manutenzione, questa Applicazione e gli
+                            eventuali servizi terzi da essa utilizzati potrebbero raccogliere log di sistema, ossia file
+                            che registrano le interazioni e che possono contenere anche Dati Personali, quali
+                            l&rsquo;indirizzo IP Utente.
+                            <h4>Informazioni non contenute in questa policy</h4>
+                            Ulteriori informazioni in relazione al trattamento dei Dati Personali potranno essere
+                            richieste in qualsiasi momento al Titolare del Trattamento utilizzando gli estremi di
+                            contatto.
+                            <h4>Risposta alle richieste &ldquo;Do Not Track&rdquo;</h4>
+                            Questa Applicazione non supporta le richieste &ldquo;Do Not Track&rdquo;. Per scoprire se
+                            gli eventuali servizi di terze parti utilizzati le supportino, l'Utente &egrave; invitato a
+                            consultare le rispettive privacy policy.
+                            <h4>Modifiche a questa privacy policy</h4>
+                            Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla presente
+                            privacy policy in qualunque momento dandone informazione agli Utenti su questa pagina e, se
+                            possibile, su questa Applicazione nonch&eacute;, qualora tecnicamente e legalmente
+                            fattibile, inviando una notifica agli Utenti attraverso uno degli estremi di contatto di cui
+                            &egrave; in possesso il Titolare . Si prega dunque di consultare regolarmente questa pagina,
+                            facendo riferimento alla data di ultima modifica indicata in
+                            fondo. Qualora le modifiche interessino trattamenti la cui base giuridica &egrave; il
+                            consenso, il Titolare provveder&agrave; a raccogliere nuovamente il consenso
+                            dell&rsquo;Utente, se necessario.
+                            <h3>Definizioni e riferimenti legali</h3>
+                            <h4>Dati Personali (o Dati)</h4>
+                            Costituisce dato personale qualunque informazione che, direttamente o indirettamente, anche
+                            in collegamento con qualsiasi altra informazione, ivi compreso un numero di identificazione
+                            personale, renda identificata o identificabile una persona fisica.
+                            <h4>Dati di Utilizzo</h4>
+                            Sono le informazioni raccolte automaticamente attraverso questa Applicazione (anche da
+                            applicazioni di parti terze integrate in questa Applicazione), tra cui: gli indirizzi IP o i
+                            nomi a dominio dei computer utilizzati dall&rsquo;Utente che si connette con questa
+                            Applicazione, gli indirizzi in notazione URI (Uniform Resource Identifier), l&rsquo;orario
+                            della richiesta, il metodo utilizzato nell&rsquo;inoltrare la richiesta al server, la
+                            dimensione del file ottenuto in risposta, il codice numerico indicante lo
+                            stato della risposta dal server (buon fine, errore, ecc.) il paese di provenienza, le
+                            caratteristiche del browser e del sistema operativo utilizzati dal visitatore, le varie
+                            connotazioni temporali della visita (ad esempio il tempo di permanenza su ciascuna pagina) e
+                            i dettagli relativi all&rsquo;itinerario seguito all&rsquo;interno dell&rsquo;Applicazione,
+                            con particolare riferimento alla sequenza delle pagine consultate, ai parametri relativi al
+                            sistema operativo e all&rsquo;ambiente informatico dell&rsquo;Utente.
+                            <h4>Utente</h4>
+                            L'individuo che utilizza questa Applicazione che, salvo ove diversamente specificato,
+                            coincide con l'Interessato.
+                            <h4>Interessato</h4>
+                            La persona fisica cui si riferiscono i Dati Personali.
+                            <h4>Responsabile del Trattamento (o Responsabile)</h4>
+                            La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente che tratta
+                            dati personali per conto del Titolare, secondo quanto esposto nella presente privacy policy.
+                            <h4>Titolare del Trattamento (o Titolare)</h4>
+                            La persona fisica o giuridica, l'autorit&agrave; pubblica, il servizio o altro organismo
+                            che, singolarmente o insieme ad altri, determina le finalit&agrave; e i mezzi del
+                            trattamento di dati personali e gli strumenti adottati, ivi comprese le misure di sicurezza
+                            relative al funzionamento ed alla fruizione di questa Applicazione. Il Titolare del
+                            Trattamento, salvo quanto diversamente specificato, &egrave; il titolare di questa
+                            Applicazione.
+                            <h4>Questa Applicazione</h4>
+                            Lo strumento hardware o software mediante il quale sono raccolti e trattati i Dati Personali
+                            degli Utenti.
+                            <h4>Servizio</h4>
+                            Il Servizio fornito da questa Applicazione cos&igrave; come definito nei relativi termini
+                            (se presenti) su questo sito/applicazione.
+                            <h4>Unione Europea (o UE)</h4>
+                            Salvo ove diversamente specificato, ogni riferimento all&rsquo;Unione Europea contenuto in
+                            questo documento si intende esteso a tutti gli attuali stati membri dell&rsquo;Unione
+                            Europea e dello Spazio Economico Europeo.
+                            <h4>Cookie</h4>
+                            Piccola porzione di dati conservata all'interno del dispositivo dell'Utente.
+                            <h4>Riferimenti legali</h4>
+                            La presente informativa privacy &egrave; redatta sulla base di molteplici ordinamenti
+                            legislativi, inclusi gli artt. 13 e 14 del Regolamento (UE) 2016/679. Ove non diversamente
+                            specificato, questa informativa privacy riguarda esclusivamente questa Applicazione. Ultima
+                            modifica: 12 aprile 2019
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal fade m-0 p-0" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="cookieModal" aria-hidden="true">
-            <div class="modal-dialog m" role="document">
-                <div class="modal-content">
-                    <div class="modal-header" style="position: absolute; top: 0; right:0; z-index: 2000">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">
-								<svg class="bi" width="32" height="32">
-									<use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#x" />
-								</svg>
-							</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-4 p-md-5">
-                        Nel rispetto degli obblighi derivanti dalla normativa nazionale e comunitaria in materia di tutela dei dati personali, ed in particolare del Provvedimento del Garante Privacy n. 229 del 08 Maggio 2014, Metamorfosi Srl, in qualit&agrave; di Titolare del Trattamento, informa che il presente sito utilizza cookie di prima parte (c.d. tecnici) e cookie di terze parti, per migliorare l&rsquo;esperienza di navigazione sulle pagine del presente sito web (ad esempio, i cookies possono essere usati per determinare se &egrave; gi&agrave; stata effettuata una connessione fra il computer del visitatore/utente e il nostro sito, o per mantenere eventuali dati di &ldquo;login&rdquo;)
-                        I &ldquo;Cookie&rdquo; sono piccoli file di testo che vengono inviati da un sito web e registrati nella memoria temporanea del browser di un utente-visitatore &ndash; e quindi nel computer &ndash; durante la navigazione.
-                        <h4>Tipologie di Cookie</h4>
-                        Utilizzando questo sito, l&rsquo;utente accetta che i seguenti cookie siano installati sul tuo dispositivo:
-                        <h4>COOKIE DI PRIMA PARTE</h4>
-                        Cookies di sessione:
-                        si tratta di cookies utili per consentire un&rsquo;esperienza di navigazione sicura ed efficiente o il l&rsquo;esecuzione di funzionalit&agrave; del sito. Gli stessi sono inoltre utilizzati per garantire finalit&agrave; di sicurezza del sito come ad esempio impedire attacchi informatici. Tali cookie, non sono strumentali alla raccolta di dati personali identificativi degli Utenti, essendo limitati alla sola trasmissione di dati identificativi di sessione nella forma di numeri generati automaticamente dal server, e durano limitatamente alla durata sessione (fino alla chiusura del browser) permettendo di memorizzare temporaneamente le informazioni necessarie per la navigazione cos&igrave; da non doverle inserire nuovamente. Per essi non occorre alcun consenso.
-                        <h4>Cookie di funzionalit&agrave;:</h4>
-                        si tratta di cookies utilizzati per memorizzare personalizzazioni dell&rsquo;utente riconducibili all&rsquo;uso del sito, come ad esempio la lingua, o comunque riferibili ad un&rsquo;espressa richiesta di funzionalit&agrave; da parte dell&rsquo;utente, ad esempio i dati di Login.
-                        Anche per questi cookie non occorre alcun consenso.
-                        <h4>COOKIE DI TERZE PARTI</h4>
-                        Cookies Analitici Di Terze Parti
-                        Sul sito sono presenti anche cookie di terze parti, utilizzati per poter fornire ulteriori funzionalit&agrave; e migliorare l&rsquo;esperienza di navigazione. Rispetto a questi cookie il sito funge solo da intermediario. La presente privacy policy, quindi, non si applica a tali cookie in quanto servizi forniti da terze parti rispetto ai quali questo sito non ha alcun controllo n&egrave; accesso alle informazioni raccolte. Pertanto, il contratto di cessione dati avviene direttamente tra l&rsquo;utente/visitatore e le terze parti, con la conseguenza che l&rsquo;acquisizione del consenso per detti cookie &egrave; a carico delle terze parti e le informazioni sull&rsquo;uso di tali cookies &ndash; nonch&eacute; sulle finalit&agrave; degli stessi e modalit&agrave; per l&rsquo;eventuale disabilitazione &ndash; vengono fornite direttamente dalle terze parti ai link di seguito indicati.
+            <div class="modal fade m-0 p-0" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="cookieModal"
+                aria-hidden="true">
+                <div class="modal-dialog m" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="position: absolute; top: 0; right:0; z-index: 2000">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    <svg class="bi" width="32" height="32">
+                                        <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#x" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body p-4 p-md-5">
+                            Nel rispetto degli obblighi derivanti dalla normativa nazionale e comunitaria in materia di
+                            tutela dei dati personali, ed in particolare del Provvedimento del Garante Privacy n. 229
+                            del 08 Maggio 2014, Metamorfosi Srl, in qualit&agrave; di Titolare del Trattamento, informa
+                            che il presente sito utilizza cookie di prima parte (c.d. tecnici) e cookie di terze parti,
+                            per migliorare l&rsquo;esperienza di navigazione sulle pagine del presente sito web (ad
+                            esempio, i cookies possono essere usati per determinare se &egrave; gi&agrave; stata
+                            effettuata una connessione fra il computer del visitatore/utente e il nostro sito, o per
+                            mantenere eventuali dati di &ldquo;login&rdquo;)
+                            I &ldquo;Cookie&rdquo; sono piccoli file di testo che vengono inviati da un sito web e
+                            registrati nella memoria temporanea del browser di un utente-visitatore &ndash; e quindi nel
+                            computer &ndash; durante la navigazione.
+                            <h4>Tipologie di Cookie</h4>
+                            Utilizzando questo sito, l&rsquo;utente accetta che i seguenti cookie siano installati sul
+                            tuo dispositivo:
+                            <h4>COOKIE DI PRIMA PARTE</h4>
+                            Cookies di sessione:
+                            si tratta di cookies utili per consentire un&rsquo;esperienza di navigazione sicura ed
+                            efficiente o il l&rsquo;esecuzione di funzionalit&agrave; del sito. Gli stessi sono inoltre
+                            utilizzati per garantire finalit&agrave; di sicurezza del sito come ad esempio impedire
+                            attacchi informatici. Tali cookie, non sono strumentali alla raccolta di dati personali
+                            identificativi degli Utenti, essendo limitati alla sola trasmissione di dati identificativi
+                            di sessione nella forma di numeri generati automaticamente dal server, e durano
+                            limitatamente alla durata sessione (fino alla chiusura del browser) permettendo di
+                            memorizzare temporaneamente le informazioni necessarie per la navigazione cos&igrave; da non
+                            doverle inserire nuovamente. Per essi non occorre alcun consenso.
+                            <h4>Cookie di funzionalit&agrave;:</h4>
+                            si tratta di cookies utilizzati per memorizzare personalizzazioni dell&rsquo;utente
+                            riconducibili all&rsquo;uso del sito, come ad esempio la lingua, o comunque riferibili ad
+                            un&rsquo;espressa richiesta di funzionalit&agrave; da parte dell&rsquo;utente, ad esempio i
+                            dati di Login.
+                            Anche per questi cookie non occorre alcun consenso.
+                            <h4>COOKIE DI TERZE PARTI</h4>
+                            Cookies Analitici Di Terze Parti
+                            Sul sito sono presenti anche cookie di terze parti, utilizzati per poter fornire ulteriori
+                            funzionalit&agrave; e migliorare l&rsquo;esperienza di navigazione. Rispetto a questi cookie
+                            il sito funge solo da intermediario. La presente privacy policy, quindi, non si applica a
+                            tali cookie in quanto servizi forniti da terze parti rispetto ai quali questo sito non ha
+                            alcun controllo n&egrave; accesso alle informazioni raccolte. Pertanto, il contratto di
+                            cessione dati avviene direttamente tra l&rsquo;utente/visitatore e le terze parti, con la
+                            conseguenza che l&rsquo;acquisizione del consenso per detti cookie &egrave; a carico delle
+                            terze parti e le informazioni sull&rsquo;uso di tali cookies &ndash; nonch&eacute; sulle
+                            finalit&agrave; degli stessi e modalit&agrave; per l&rsquo;eventuale disabilitazione &ndash;
+                            vengono fornite direttamente dalle terze parti ai link di seguito indicati.
 
-                        In particolare sul Sito potranno essere installati cookie in grado di calcolare il numero aggregato di visite al Sito o identificare quali pagine dello stesso siano pi&ugrave; popolari. Tale attivit&agrave; viene effettuata, in modo completamente anonimo, utilizzando il sistema Google Analytics, per maggiori informazioni visitare il seguente link: <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a>. E&rsquo; sempre possibile gestire o disattivare tali cookies accedendo all&rsquo;indirizzo: <a href="https://support.google.com/accounts/answer/61416?hl=it">https://support.google.com/accounts/answer/61416?hl=it</a>.
-                        Le informazioni ottenute saranno trattate da Google nel rispetto dell&rsquo;informativa sulla privacy disponibile al seguente indirizzo: <a href="https://www.google.com/intl/en/policies/privacy/">https://www.google.com/intl/en/policies/privacy/</a>.
-                        Si evidenzia comunque che il servizio di Google Analytics viene utilizzato con l&rsquo;adozione delle apposite misure per ridurre il potere identificativo dei cookie e per evitare che vengano incrociate le informazioni raccolte.
-                        &ndash; Youtube cookies
-                        Youtube &egrave; una piattaforma di propriet&agrave; di Google, per la condivisione di video. Tale portale utilizza cookie per raccogliere informazioni degli utenti e dei dispositivi di navigazione. Anche rispetto a questi cookie il sito funge solo da intermediario, quindi per ulteriori informazioni sull&rsquo;uso dei dati e sul loro trattamento da parte di Google si raccomanda di prendere visione dell&rsquo;informativa presente al seguente link <a href="http://www.google.com/intl/it/policies/privacy/">http://www.google.com/intl/it/policies/privacy/</a>.
-                        <h4>Disabilitazione cookie</h4>
-                        I cookies sono collegati al browser utilizzato e possono essere disabilitati direttamente dal browser, cos&igrave; rifiutando/revocando il consenso all&rsquo;uso dei cookies. occorre tenere presente che la disabilitazione dei cookies potrebbe impedire il corretto utilizzo di alcune funzioni del sito stesso. le istruzioni per la disabilitazione dei cookies si trovano alle seguenti pagine web:
-                        <ul>
-                        <li><a href="http://windows.microsoft.com/it-it/windows7/block-enable-or-allow-cookies">Microsoft Internet Explorer</a></li>
-                        <li><a href="https://support.google.com/accounts/answer/61416?hl=it">Google Chrome</a></li>
-                        <li><a href="https://support.apple.com/kb/PH19214?locale=it_IT">Apple Safari</a></li>
-                        <li><a href="https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie">Mozilla Firefox</a></li>
-                        <li><a href="http://help.opera.com/Windows/10.00/it/cookies.html">Opera</a></li>
-                        </ul>
-                        <h4>Misure di sicurezza</h4>
-                        Il presente sito tratta i dati degli utenti in maniera lecita e corretta, adottando adeguati standard di sicurezza idonei ad impedire accessi non autorizzati, divulgazione, perdita, modifica o distruzione non autorizzata dei dati.
-                        <h4>Diritti dell&rsquo;utente</h4>
-                        Titolare del trattamento &egrave; Metamorfosi Srl, gli utenti interessati al trattamento hanno ai sensi dell&rsquo;art 7 Codice della Privacy il diritto di ottenere la conferma circa l&rsquo;esistenza o meno di dati loro afferenti presso il titolare, nonch&eacute; di conoscerne il contenuto, l&rsquo;origine, di verificarne l&rsquo;esattezza, di chiederne l&rsquo;integrazione, la cancellazione, l&rsquo;aggiornamento, la rettifica mediante invio di comunicazione e-mail all&rsquo;indirizzo mail: <a href="mailto:info@Metamorfosi.it">info@Metamorfosi.it</a> . Le richieste andranno rivolte al Titolare del trattamento.
+                            In particolare sul Sito potranno essere installati cookie in grado di calcolare il numero
+                            aggregato di visite al Sito o identificare quali pagine dello stesso siano pi&ugrave;
+                            popolari. Tale attivit&agrave; viene effettuata, in modo completamente anonimo, utilizzando
+                            il sistema Google Analytics, per maggiori informazioni visitare il seguente link: <a
+                                href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a>.
+                            E&rsquo; sempre possibile gestire o disattivare tali cookies accedendo all&rsquo;indirizzo:
+                            <a
+                                href="https://support.google.com/accounts/answer/61416?hl=it">https://support.google.com/accounts/answer/61416?hl=it</a>.
+                            Le informazioni ottenute saranno trattate da Google nel rispetto dell&rsquo;informativa
+                            sulla privacy disponibile al seguente indirizzo: <a
+                                href="https://www.google.com/intl/en/policies/privacy/">https://www.google.com/intl/en/policies/privacy/</a>.
+                            Si evidenzia comunque che il servizio di Google Analytics viene utilizzato con
+                            l&rsquo;adozione delle apposite misure per ridurre il potere identificativo dei cookie e per
+                            evitare che vengano incrociate le informazioni raccolte.
+                            &ndash; Youtube cookies
+                            Youtube &egrave; una piattaforma di propriet&agrave; di Google, per la condivisione di
+                            video. Tale portale utilizza cookie per raccogliere informazioni degli utenti e dei
+                            dispositivi di navigazione. Anche rispetto a questi cookie il sito funge solo da
+                            intermediario, quindi per ulteriori informazioni sull&rsquo;uso dei dati e sul loro
+                            trattamento da parte di Google si raccomanda di prendere visione dell&rsquo;informativa
+                            presente al seguente link <a
+                                href="http://www.google.com/intl/it/policies/privacy/">http://www.google.com/intl/it/policies/privacy/</a>.
+                            <h4>Disabilitazione cookie</h4>
+                            I cookies sono collegati al browser utilizzato e possono essere disabilitati direttamente
+                            dal browser, cos&igrave; rifiutando/revocando il consenso all&rsquo;uso dei cookies. occorre
+                            tenere presente che la disabilitazione dei cookies potrebbe impedire il corretto utilizzo di
+                            alcune funzioni del sito stesso. le istruzioni per la disabilitazione dei cookies si trovano
+                            alle seguenti pagine web:
+                            <ul>
+                                <li><a href="http://windows.microsoft.com/it-it/windows7/block-enable-or-allow-cookies">Microsoft
+                                        Internet Explorer</a></li>
+                                <li><a href="https://support.google.com/accounts/answer/61416?hl=it">Google Chrome</a>
+                                </li>
+                                <li><a href="https://support.apple.com/kb/PH19214?locale=it_IT">Apple Safari</a></li>
+                                <li><a href="https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie">Mozilla
+                                        Firefox</a></li>
+                                <li><a href="http://help.opera.com/Windows/10.00/it/cookies.html">Opera</a></li>
+                            </ul>
+                            <h4>Misure di sicurezza</h4>
+                            Il presente sito tratta i dati degli utenti in maniera lecita e corretta, adottando adeguati
+                            standard di sicurezza idonei ad impedire accessi non autorizzati, divulgazione, perdita,
+                            modifica o distruzione non autorizzata dei dati.
+                            <h4>Diritti dell&rsquo;utente</h4>
+                            Titolare del trattamento &egrave; Metamorfosi Srl, gli utenti interessati al trattamento
+                            hanno ai sensi dell&rsquo;art 7 Codice della Privacy il diritto di ottenere la conferma
+                            circa l&rsquo;esistenza o meno di dati loro afferenti presso il titolare, nonch&eacute; di
+                            conoscerne il contenuto, l&rsquo;origine, di verificarne l&rsquo;esattezza, di chiederne
+                            l&rsquo;integrazione, la cancellazione, l&rsquo;aggiornamento, la rettifica mediante invio
+                            di comunicazione e-mail all&rsquo;indirizzo mail: <a
+                                href="mailto:info@Metamorfosi.it">info@Metamorfosi.it</a> . Le richieste andranno
+                            rivolte al Titolare del trattamento.
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="cookieConsent">Questo sito fa utilizzo di cookie. Continuando si acconsente all'utilizzo dei dati raccolti <button class="btn cookieAccept">Accetta</button></div>-->
-        
-        <!--<div id="particles-js"></div>-->
-        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script type="module" src="assets/js/starter.js"></script>
-        <!--<script type="text/javascript" src="node_modules/youtube-background/jquery.youtube-background.js"></script>-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js" crossorigin="anonymous"></script>
-        <!--<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcUJAoeAAAAACXOMJBbTOMoDgJ1k0epU6ZtGD5F" ></script>-->
-        <script type="text/javascript" src="node_modules/jquery.cookie-consent/dist/jquery.cookie-consent.min.js" ></script>
-        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
-        <!--<script type="text/javascript" src="assets/js/particles.min.js"></script>-->
-        <script type="text/javascript" src="assets/js/custom.js"></script>
-        
+            <div id="cookieConsent">Questo sito fa utilizzo di cookie. Continuando si acconsente all'utilizzo dei dati
+                raccolti <button class="btn cookieAccept">Accetta</button></div>
+
+            <!--<div id="particles-js"></div>-->
+            <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script type="module" src="assets/js/starter.js"></script>
+            <!--<script type="text/javascript" src="node_modules/youtube-background/jquery.youtube-background.js"></script>-->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+                crossorigin="anonymous"></script>
+            <!--<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LcUJAoeAAAAACXOMJBbTOMoDgJ1k0epU6ZtGD5F" ></script>-->
+            <script type="text/javascript"
+                src="node_modules/jquery.cookie-consent/dist/jquery.cookie-consent.min.js"></script>
+            <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+            <!--<script type="text/javascript" src="assets/js/particles.min.js"></script>-->
+            <script type="text/javascript" src="assets/js/custom.js"></script>
+
     </body>
-</html>
 
- 
+</html>

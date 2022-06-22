@@ -17,7 +17,7 @@ $(function() {
     /*----------------------------------------------------------------------*/
 
     /** change value here to adjust parallax level */
-    var parallax = 0.2;
+    var parallax = 0.4;
 
     var $bg_images = $(".block-cover-image");
     var offset_tops = [];
@@ -43,7 +43,7 @@ $(function() {
 
     // Cache selectors
     var lastId,
-    topMenu = $(".navbar"),
+    topMenu = $(".click-scroll"),
     topMenuHeight = topMenu.outerHeight() ,
     // All list items
     menuItems = topMenu.find("a"),
@@ -63,7 +63,7 @@ $(function() {
             {
             scrollTop: offsetTop,
             },
-            300
+            1000
         );
         e.preventDefault();
     });
@@ -185,7 +185,7 @@ $(function() {
 
     $('.menu-anim').on('click touch', function () {
         $(this).toggleClass('change');
-        $('.blob').toggleClass('d-none')
+        $('.blob').toggleClass('d-none');
     });
 
 
